@@ -10,9 +10,9 @@ namespace Day_01
             #region 定义函数
             int age = 114514;
             double xp = 1919.810;
-            char you = '你';
-            string name = "傻逼";
-            decimal money = 100m;
+            char you = '你'; 字符
+            string name = "傻逼"; 字符串
+            decimal money = 100m; 指定金钱类
             #endregion
             Console.WriteLine(you+"是"+name+"你今年"+age+"岁，现在有"+xp+"经验以及"+money+"元");
             Console.ReadKey();

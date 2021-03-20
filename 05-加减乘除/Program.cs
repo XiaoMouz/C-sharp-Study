@@ -6,6 +6,9 @@ namespace _05_加减乘除
     {
         static void Main(string[] args)
         {
+            /* 记一个 Convert——强制类型转换
+             * double > int 直接去除小数点后
+             */
             //语文90 数学80 英语76 求总成绩，三科平均成绩
             int chinese = 90;
             int math = 80;
