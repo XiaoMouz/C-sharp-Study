@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-作业", "05-作业\05-�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-运算符", "06-关系运算符\06-运算符.csproj", "{BB6508C1-1BDD-4F19-998C-202391FA498E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "if初学", "if初学\if初学.csproj", "{16C93FA5-A0D8-4CD1-BE98-423028D14C05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-if初学", "if初学\07-if初学.csproj", "{16C93FA5-A0D8-4CD1-BE98-423028D14C05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
