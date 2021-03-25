@@ -39,20 +39,20 @@ namespace _07_if初学
             //    Console.WriteLine("你获得了一顿毒打");
             //}
             #endregion
-            #region 题目三:Disenable
-            //Console.WriteLine("请输入你的用户名");
-            //string username = Console.ReadLine();
-            //Console.WriteLine("请输入你的密码");
-            //string password = Console.ReadLine();
-            //bool allow = (username == "admin") && (password == "mypass");
-            //if(allow)
-            //{
-            //    Console.WriteLine("登录成功");
-            //}    
-            //if(allow==false)
-            //{
-            //    Console.WriteLine("密码错误，程序退出");
-            //}
+            #region 题目三:Enable
+            Console.WriteLine("请输入你的用户名");
+            string username = Console.ReadLine();
+            Console.WriteLine("请输入你的密码");
+            string password = Console.ReadLine();
+            bool allow = (username == "admin") && (password == "mypass");
+            if (allow)
+            {
+                Console.WriteLine("登录成功");
+            }
+            if (allow == false)
+            {
+                Console.WriteLine("密码错误，程序退出");
+            }
             #endregion
             //if-else
 
