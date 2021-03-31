@@ -105,7 +105,32 @@ namespace _07_if初学
             //if-else-if：用于多条件的区间性判断
             #region example
             //若成绩大于90则给予A、大于80则给予B、大于70则给予C、大于60则给予D、小于60则给予不合格（所有大于均等于，且不包含上一级）
-            
+            Console.WriteLine("请输入成绩");
+            int score = Convert.ToInt32(Console.ReadLine());
+            if (score >= 90)
+            {
+                Console.WriteLine("A");
+            }
+            else if (score >= 80)
+            {
+                Console.WriteLine("B");
+            }
+            else if (score >= 70)
+            {
+                Console.WriteLine("C");
+            }
+            else if (score >= 60)
+            {
+                Console.WriteLine("D");
+            }
+            else if (score < 60)
+            {
+                Console.WriteLine("E");
+            }
+            else
+            {
+                Console.WriteLine("WT R U FKING DOING?");
+            }
             #endregion
             Console.ReadKey();
         }
