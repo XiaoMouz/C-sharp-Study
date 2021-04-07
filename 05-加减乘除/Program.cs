@@ -42,20 +42,6 @@ namespace _05_加减乘除
             double d = a * 1.0 / b;
             Console.WriteLine("成了{0}，并且可以取{0:0.00}，也就是小数点后2位", d, d);
             Console.ReadKey();
-
-            //++和--的含义以及用法
-            int mm = 1;
-            int rev = 10 + mm++;   /*等于
-                                    * rev + mm
-                                    * mm++
-                                    * 此时rev=11，mm=2
-                                    */
-            int rev_2 = 10 + ++mm; /*等于
-                                    * mm++
-                                    * rev + mm
-                                    * 此时rev=12，mm=2
-                                    */
-            Console.WriteLine("a={0},b={1},c={2}", mm, rev, rev_2);
         }
     }
 }

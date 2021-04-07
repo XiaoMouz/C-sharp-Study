@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-运算符", "06-关系�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "07-if初学", "if初学\07-if初学.csproj", "{16C93FA5-A0D8-4CD1-BE98-423028D14C05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "if作业", "if作业\if作业.csproj", "{3F5F0FC3-5E64-4801-90A5-11D52CDAF4F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "if作业", "if作业\if作业.csproj", "{3F5F0FC3-5E64-4801-90A5-11D52CDAF4F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-异常捕获", "08-异常捕获\08-异常捕获.csproj", "{43446EE6-F283-4D3F-9A50-8A8D46A309C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{3F5F0FC3-5E64-4801-90A5-11D52CDAF4F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F5F0FC3-5E64-4801-90A5-11D52CDAF4F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F5F0FC3-5E64-4801-90A5-11D52CDAF4F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43446EE6-F283-4D3F-9A50-8A8D46A309C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43446EE6-F283-4D3F-9A50-8A8D46A309C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43446EE6-F283-4D3F-9A50-8A8D46A309C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43446EE6-F283-4D3F-9A50-8A8D46A309C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

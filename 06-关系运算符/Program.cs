@@ -11,7 +11,7 @@ namespace _06_关系运算符
              *    注意：优先级如下：逻辑与>逻辑或
              * name = xx >/.../<= yy 输出为true/false使用bool来赋值
              * 复合赋值运算符：一元运算符的进阶
-             * += number+=20 = number=number+20;
+             * += number+=20 == number=number+20; is true
              * -= 同理得出如下
              * *=
              * /=
@@ -33,6 +33,20 @@ namespace _06_关系运算符
 
             bool allow_only = first > 90 || second > 90;
             Console.WriteLine("90 only：{0}", allow_only);
+
+            //++和--的含义以及用法
+            int mm = 1;
+            int rev = 10 + mm++;   /*等于
+                                    * rev + mm
+                                    * mm++
+                                    * 此时rev=11，mm=2
+                                    */
+            int rev_2 = 10 + ++mm; /*等于
+                                    * mm++
+                                    * rev + mm
+                                    * 此时rev=12，mm=2
+                                    */
+            Console.WriteLine("a={0},b={1},c={2}", mm, rev, rev_2);
 
             Console.ReadKey();
         }
