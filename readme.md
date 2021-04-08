@@ -12,4 +12,4 @@
 
 # 进度
 
-**已经建立了[Project](https://github.com/XiaoMouz/C-sharp-Study/projects/1)，欢迎查看***
+**已经建立了[Project](https://github.com/XiaoMouz/C-sharp-Study/projects/1)，欢迎查看**
