@@ -1,8 +1,9 @@
 # C#学习记录
 
 - 从Console到面向对象，摸鱼学习状态，预计完成学习时间为`2022/03/26`，主要学习内容为面向对象、WPF等
-- 本项目是`Visual studio 2019`解决方案一整套文件，并非只有代码
-- 现已知问题：**项目被重命名，但是源代码内**`namespace`**依旧未更改，跨类处理繁琐**
+- 本项目是`Visual Studio 2019`解决方案一整套文件，并非只有代码
+- 现已知问题：**项目**`class01`**被重命名，但是源代码内**`namespace`**依旧未更改，跨类处理繁琐**
+- 同时也是为了熟悉**Github**一系列功能，例如*issue*、*projects*、*wiki*、*release*、*pull request*等
 
 #  学习动力
 
@@ -11,7 +12,4 @@
 
 # 进度
 
-- [x] 赋值、打印内容、占位符、转义符
-- [x] 运算符、类型转换、计算
-
-- [x] if、if-else、if else-if
+**已经建立了[Project](https://github.com/XiaoMouz/C-sharp-Study/projects/1)，欢迎查看***
