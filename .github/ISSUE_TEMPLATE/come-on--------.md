@@ -1,6 +1,6 @@
 ---
-name: 指正错误
-about: 让我教你写代码
+name: come on~ 指正代码错误
+about: 小伙子，你还是too young啊，让我教你写代码~
 title: 请在此写出哪个方案与哪个项目
 labels: 我来教你写代码
 assignees: XiaoMouz
