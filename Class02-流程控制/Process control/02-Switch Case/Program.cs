@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Switch_Case
+namespace _02_Switch_Case
 {
     class Program
     {

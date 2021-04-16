@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31105.61
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-异常处理", "01-异常处理\01-异常处理.csproj", "{14500E77-8B8D-44F0-BD95-9C7EC3994122}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Switch-Case", "Switch-Case\Switch-Case.csproj", "{33482794-37D2-43AC-81BF-FA7A878B4D71}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Switch Case", "02-Switch Case\02-Switch Case.csproj", "{B496BCA0-BD39-4FD7-97AF-A0F7BC79DDDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{14500E77-8B8D-44F0-BD95-9C7EC3994122}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14500E77-8B8D-44F0-BD95-9C7EC3994122}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14500E77-8B8D-44F0-BD95-9C7EC3994122}.Release|Any CPU.Build.0 = Release|Any CPU
-		{33482794-37D2-43AC-81BF-FA7A878B4D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33482794-37D2-43AC-81BF-FA7A878B4D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33482794-37D2-43AC-81BF-FA7A878B4D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33482794-37D2-43AC-81BF-FA7A878B4D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B496BCA0-BD39-4FD7-97AF-A0F7BC79DDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B496BCA0-BD39-4FD7-97AF-A0F7BC79DDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B496BCA0-BD39-4FD7-97AF-A0F7BC79DDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B496BCA0-BD39-4FD7-97AF-A0F7BC79DDDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
