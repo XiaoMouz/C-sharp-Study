@@ -43,25 +43,32 @@ namespace _02_Switch_Case
             //    Console.WriteLine("工资已修改为{0}", salary);
             //} 
             #endregion
-            switch(level)
+            #region switch写法
+            switch (level)
             {
-                case "A":salary += 500;
+                case "A":
+                    salary += 500;
                     break;
-                case "B":salary += 200;
+                case "B":
+                    salary += 200;
                     break;
-                case "C":break;
-                case "D":salary -= 200;
+                case "C": break;
+                case "D":
+                    salary -= 200;
                     break;
-                case "E":salary -= 500;
+                case "E":
+                    salary -= 500;
                     break;
-                default:Console.WriteLine("error，crush");
+                default:
+                    Console.WriteLine("error，crush");
                     past = false;
                     break;
             }
-            if(past)
+            if (past)
             {
                 Console.Write("员工工资修改为{0}", salary);
-            }
+            } 
+            #endregion
         }
     }
 }
