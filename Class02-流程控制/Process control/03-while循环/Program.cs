@@ -32,8 +32,8 @@ namespace _03_while循环
                 }
                 i++;
             }
-            console.writeline(sum);
-            console.readkey();
+            Console.WriteLine(sum);
+            Console.ReadKey();
         }
     }
 }
