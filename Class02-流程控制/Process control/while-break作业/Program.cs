@@ -9,6 +9,7 @@ namespace while_break作业
             /* Q1:输入人数，依次输入成绩，计算平均成绩和每个人总成绩
              * Q2:询问你是否会了，若会(y)则结束，若不会(n)则重复
              * Q3:06年有8w人，每年都会比上年增长25%，到哪一年会达到20w人
+             * Q4: A输入用户名，用户名不得为空，否则一直循环，B输入用户名，B用户名不得为空并且不得与A重复,否则一直循环
              */
             #region Q1回答
             //int i = 1;
@@ -78,7 +79,22 @@ namespace while_break作业
                 year++;
             }
             int human = Convert.ToInt32(people);
-            Console.WriteLine("{0}年时有{1}人", year, human); 
+            Console.WriteLine("{0}年时有{1}人", year, human);
+            #endregion
+
+            #region Q4回答
+            string userName_A = "";
+            string userName_B = "";
+            while (userName_B == ""||userName_B==userName_A)
+            {
+                while (userName_A == "")
+                {
+                    Console.WriteLine("请A输入用户名，用户名不得为空");
+                    userName_A = Console.ReadLine();
+                }
+                Console.WriteLine("请B输入用户名，用户名不得为空并且不得与A重复");
+                userName_B = Console.ReadLine();
+            } 
             #endregion
         }
     }
