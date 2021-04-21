@@ -69,15 +69,17 @@ namespace while_break作业
             //}
             #endregion
 
+            #region Q3回答
             double people = 80000;
             int year = 2006;
-            while(people<=200000)
+            while (people <= 200000)
             {
                 people *= 1.25;
                 year++;
             }
             int human = Convert.ToInt32(people);
-            Console.WriteLine("{0}年时有{1}人", year, human);
+            Console.WriteLine("{0}年时有{1}人", year, human); 
+            #endregion
         }
     }
 }
