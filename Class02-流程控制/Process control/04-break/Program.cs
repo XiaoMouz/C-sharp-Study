@@ -14,7 +14,7 @@ namespace _04_break
             //    break;//直接跳出循环  
             //}
             //用户登录，admin/888888，若错误要求重新输入
-            #region 回答
+            #region 回答(while写法)
             int i = 4;
             while (i > 0)
             {

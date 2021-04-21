@@ -71,30 +71,87 @@ namespace while_break作业
             #endregion
 
             #region Q3回答
-            double people = 80000;
-            int year = 2006;
-            while (people <= 200000)
-            {
-                people *= 1.25;
-                year++;
-            }
-            int human = Convert.ToInt32(people);
-            Console.WriteLine("{0}年时有{1}人", year, human);
+            //double people = 80000;
+            //int year = 2006;
+            //while (people <= 200000)
+            //{
+            //    people *= 1.25;
+            //    year++;
+            //}
+            //int human = Convert.ToInt32(people);
+            //Console.WriteLine("{0}年时有{1}人", year, human);
             #endregion
 
             #region Q4回答
-            string userName_A = "";
-            string userName_B = "";
-            while (userName_B == ""||userName_B==userName_A)
-            {
-                while (userName_A == "")
-                {
-                    Console.WriteLine("请A输入用户名，用户名不得为空");
-                    userName_A = Console.ReadLine();
-                }
-                Console.WriteLine("请B输入用户名，用户名不得为空并且不得与A重复");
-                userName_B = Console.ReadLine();
-            } 
+            //string userName_A = "";
+            //string userName_B = "";
+            //while (userName_B == ""||userName_B==userName_A)
+            //{
+            //    while (userName_A == "")
+            //    {
+            //        Console.WriteLine("请A输入用户名，用户名不得为空");
+            //        userName_A = Console.ReadLine();
+            //    }
+            //    Console.WriteLine("请B输入用户名，用户名不得为空且不得与A重复");
+            //    userName_B = Console.ReadLine();
+            //} 
+            #endregion
+
+            /* do-while
+             * Q1:要求用户一直输入姓名，或者输入q结束程序
+             * Q2:要求输入数字，然后打印这个数字的二倍，输入q就退出程序
+             * Q3:要求输入用户数字，而后输入q时打印刚才数字中的最大值
+             */
+
+            #region Q1回答
+            //string name = "";
+            //do
+            //{
+            //    Console.WriteLine("请输入name");
+            //    name = Console.ReadLine();
+            //} while (name != "q"); 
+            #endregion
+
+            #region Q2回答
+            //int num;
+            //string save;
+            //do
+            //{
+            //    Console.WriteLine("请输入一个数字");
+            //    save = Console.ReadLine();
+            //    try
+            //    {
+            //        num = Convert.ToInt32(save);
+            //        Console.WriteLine(num * 2);
+            //    }
+            //    catch
+            //    {
+            //        Console.WriteLine("正在识别是否为q，若为q则将退出程序");
+            //    }
+            //} while (save != "q"); 
+            #endregion
+
+            #region Q3回答
+            //double num = 0;
+            //string input = "";
+            //do
+            //{
+            //    Console.WriteLine("请输入正整数");
+            //    input = Console.ReadLine();
+            //    try
+            //    {
+
+            //        if (Convert.ToInt32(input) > num)
+            //        {
+            //            num = Convert.ToInt32(input);
+            //        }
+            //    }
+            //    catch
+            //    {
+            //        Console.WriteLine("输入非数字，若输入为q则将打印最大数，非q则要求重新输入");
+            //    }
+            //} while(input != "q");
+            //Console.WriteLine("最大数是{0}",num); 
             #endregion
         }
     }

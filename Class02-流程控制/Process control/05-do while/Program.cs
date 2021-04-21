@@ -6,7 +6,8 @@ namespace _05_do_while
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //do-while为先执行再判断
+
         }
     }
 }

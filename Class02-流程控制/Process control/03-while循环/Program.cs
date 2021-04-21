@@ -21,17 +21,29 @@ namespace _03_while循环
             //}
             //Console.ReadKey();
 
-            //求1-100所有偶数的和
-            int i = 1;
+            //求1-100所有偶数的和(while)
+            //int i = 1;
+            //int sum = 0;
+            //while (i <= 100)
+            //{
+            //    if (i % 2 == 0)//判断为偶数
+            //    {
+            //        sum += i;
+            //    }
+            //    i++;
+            //}
+
+            //do-while循环(do-while)
+            int i = 0;
             int sum = 0;
-            while (i <= 100)
+            do
             {
-                if (i % 2 == 0)//判断为偶数
+                if (i % 2 == 0)
                 {
                     sum += i;
                 }
                 i++;
-            }
+            } while (i < 100);
             Console.WriteLine(sum);
             Console.ReadKey();
         }
