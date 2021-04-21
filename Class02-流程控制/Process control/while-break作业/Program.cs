@@ -131,27 +131,60 @@ namespace while_break作业
             //} while (save != "q"); 
             #endregion
 
-            #region Q3回答
-            //double num = 0;
+            #region Q2答案
             //string input = "";
-            //do
+            //while (input != "q")
             //{
-            //    Console.WriteLine("请输入正整数");
+            //    Console.WriteLine("请输入一个数字");
             //    input = Console.ReadLine();
-            //    try
+            //    if(input!="q")
             //    {
-
-            //        if (Convert.ToInt32(input) > num)
+            //        try
             //        {
-            //            num = Convert.ToInt32(input);
+            //            int number = Convert.ToInt32(input);
+            //            Console.WriteLine("其二倍为{0}", number * 2);
+            //        }
+            //        catch
+            //        {
+            //            Console.WriteLine("您输入的字符有误");
             //        }
             //    }
-            //    catch
+            //    else
             //    {
-            //        Console.WriteLine("输入非数字，若输入为q则将打印最大数，非q则要求重新输入");
+            //        Console.WriteLine("拜拜");
             //    }
-            //} while(input != "q");
-            //Console.WriteLine("最大数是{0}",num); 
+            //} 
+            #endregion
+
+            #region Q3回答
+            double max = 0;
+            string input = "q";
+            do
+            {
+                Console.WriteLine("请输入正整数");
+                input = Console.ReadLine();
+                if (input != "q")
+                {
+                    try
+                    {
+                        int num = Convert.ToInt32(input);
+                        if (num > max)
+                        {
+                            max = num;
+                        }
+
+                    }
+                    catch
+                    {
+                        Console.WriteLine("您的输入有误");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("最大数是{0}", max);
+                }
+            } while (input != "q");
+
             #endregion
         }
     }
