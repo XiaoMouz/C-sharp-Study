@@ -6,8 +6,20 @@ namespace _03_循环结构while
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            //睡大觉，明天学:https://www.bilibili.com/video/BV1FJ411W7e5?p=41&spm_id_from=pageDriver
+            /* while(循环条件) - 当条件=true时则循环，false时则跳出循环
+             * {
+             *  循环体; //执行完后会再判断一次循环条件
+             * }
+             */
+            //打印100000次Hello world
+            int i = 0;
+            while (i < 1000)
+            {
+                i++;
+                Console.WriteLine("Hello World!第{0}次", i);
+            }
+            Console.ReadKey();
+
         }
     }
 }
