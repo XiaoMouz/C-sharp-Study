@@ -7,13 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-异常处理", "01-异�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-Switch Case", "02-Switch Case\02-Switch Case.csproj", "{B496BCA0-BD39-4FD7-97AF-A0F7BC79DDDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-while循环", "03-while循环\03-while循环.csproj", "{ABC631E8-FE6D-4DF4-9270-0E5BE0809F17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-while循环", "03-while循环\03-while循环.csproj", "{ABC631E8-FE6D-4DF4-9270-0E5BE0809F17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-break", "04-break\04-break.csproj", "{A6E41448-8459-45EC-8763-3A8569AFCC43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-break", "04-break\04-break.csproj", "{A6E41448-8459-45EC-8763-3A8569AFCC43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "while-break作业", "while-break作业\while-break作业.csproj", "{CB9D58FC-2885-416C-A4F3-9897F8F5FB3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "while-break作业", "while-break作业\while-break作业.csproj", "{CB9D58FC-2885-416C-A4F3-9897F8F5FB3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-continue", "05-continue\05-continue.csproj", "{6750A0BE-EDDF-40CA-BE7C-E9C39C9753D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-continue", "05-continue\05-continue.csproj", "{6750A0BE-EDDF-40CA-BE7C-E9C39C9753D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-for循环", "06-for循环\06-for循环.csproj", "{538954ED-BB81-4903-9E96-88D35223F657}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{6750A0BE-EDDF-40CA-BE7C-E9C39C9753D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6750A0BE-EDDF-40CA-BE7C-E9C39C9753D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6750A0BE-EDDF-40CA-BE7C-E9C39C9753D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{538954ED-BB81-4903-9E96-88D35223F657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{538954ED-BB81-4903-9E96-88D35223F657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{538954ED-BB81-4903-9E96-88D35223F657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{538954ED-BB81-4903-9E96-88D35223F657}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
