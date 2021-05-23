@@ -1,6 +1,6 @@
 ---
 name: fuck you!臭傻逼你写个鸡巴
-about: 本repo貌似没有针对任何人，你为何要怒喷呢？
+about: 本repo貌似没有针对任何人，所以有啥事咱坐下好好谈
 title: 请说明你的来意
 labels: 傻逼
 assignees: XiaoMouz
