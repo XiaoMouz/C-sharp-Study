@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "while-break作业", "while-
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-continue", "05-continue\05-continue.csproj", "{6750A0BE-EDDF-40CA-BE7C-E9C39C9753D2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-for循环", "06-for循环\06-for循环.csproj", "{538954ED-BB81-4903-9E96-88D35223F657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-for循环", "06-for循环\06-for循环.csproj", "{538954ED-BB81-4903-9E96-88D35223F657}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "for练习", "for练习\for练习.csproj", "{52AB35A1-52E2-4227-B92F-974907214DD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{538954ED-BB81-4903-9E96-88D35223F657}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{538954ED-BB81-4903-9E96-88D35223F657}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{538954ED-BB81-4903-9E96-88D35223F657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52AB35A1-52E2-4227-B92F-974907214DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52AB35A1-52E2-4227-B92F-974907214DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52AB35A1-52E2-4227-B92F-974907214DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52AB35A1-52E2-4227-B92F-974907214DD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
