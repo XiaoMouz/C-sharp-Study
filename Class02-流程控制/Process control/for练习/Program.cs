@@ -73,6 +73,7 @@ namespace for练习
             //}
             #endregion
             //Q4：水仙花数
+            #region
             //for (int i = 100; i <= 999; i++)
             //{
             //    int a = i / 100;
@@ -84,6 +85,7 @@ namespace for练习
             //    }
             //}
             //Console.ReadKey();
+            #endregion
         }
     }
 }
