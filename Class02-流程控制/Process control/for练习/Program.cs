@@ -61,17 +61,29 @@ namespace for练习
             #endregion
             //?Q3:1-100之间的帧数相加，得到累加值大于20的当前数（eg:1+2+3+4+5+6=21 sum>=20 输出6)
             #region Q3 AW
-            int sum = 0;
-            for (int i = 0; i < 100; i++)
-            {
-                sum += i;
-                if (sum >= 20)
-                {
-                    Console.WriteLine("加到{0}是，总和大于20", i);
-                    break;
-                }
-            }
+            //int sum = 0;
+            //for (int i = 0; i < 100; i++)
+            //{
+            //    sum += i;
+            //    if (sum >= 20)
+            //    {
+            //        Console.WriteLine("加到{0}是，总和大于20", i);
+            //        break;
+            //    }
+            //}
             #endregion
+            //Q4：水仙花数
+            //for (int i = 100; i <= 999; i++)
+            //{
+            //    int a = i / 100;
+            //    int b = i % 100 / 10;
+            //    int c = i % 10;
+            //    if(a*a*a+b*b*b+c*c*c==i)
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //}
+            //Console.ReadKey();
         }
     }
 }
