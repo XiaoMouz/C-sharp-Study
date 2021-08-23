@@ -54,7 +54,26 @@ namespace _02_枚举
             //Console.WriteLine(state);
             #endregion
 
+            #region 枚举类型与string的转换
+            //所有的类型都能转换为string类型 使用To.String
+            //int n1 = 10;
+            //string s = n1.ToString();
 
+            //qqstate state = qqstate.Online;
+            //Console.WriteLine(state.ToString());
+            #endregion
+
+            #region string类型转为枚举类型
+            string s = "1";
+            //将s转换成枚举类型
+            //使用Parse方法来将字符串转为对应的枚举类型
+            qqstate state= (qqstate)Enum.Parse(typeof(qqstate),s);
+            //s为不存在的枚举变量时会导致抛异常(数字将会直接显示，文本不存在则抛异常）
+            Console.WriteLine(state);
+            Console.ReadKey();
+
+            //           (枚举名)Enum.Parse(typeof(枚举名),要转换的字符串);
+            #endregion
         }
     }
 }
