@@ -15,7 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "结构的练习", "结构�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-数组", "04-数组\04-数组.csproj", "{8CEE78C8-5BD4-4184-B893-56698BFA07B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "数组的练习", "数组的练习\数组的练习.csproj", "{ADAF4A15-0023-4153-917E-88D2B021CE16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "数组的练习", "数组的练习\数组的练习.csproj", "{ADAF4A15-0023-4153-917E-88D2B021CE16}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-冒泡排序", "05-冒泡排序\05-冒泡排序.csproj", "{CE867352-8D75-4ED3-B4E8-21B38C356D6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-方法(函数)", "06-方法(函数)\06-方法(函数).csproj", "{E026D61B-B2DA-4148-B4F4-00FADF4B4909}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Return", "Return\Return.csproj", "{E989FF9E-F2A7-487D-8458-D4993743124D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{ADAF4A15-0023-4153-917E-88D2B021CE16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADAF4A15-0023-4153-917E-88D2B021CE16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADAF4A15-0023-4153-917E-88D2B021CE16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE867352-8D75-4ED3-B4E8-21B38C356D6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE867352-8D75-4ED3-B4E8-21B38C356D6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE867352-8D75-4ED3-B4E8-21B38C356D6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE867352-8D75-4ED3-B4E8-21B38C356D6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E026D61B-B2DA-4148-B4F4-00FADF4B4909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E026D61B-B2DA-4148-B4F4-00FADF4B4909}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E026D61B-B2DA-4148-B4F4-00FADF4B4909}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E026D61B-B2DA-4148-B4F4-00FADF4B4909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E989FF9E-F2A7-487D-8458-D4993743124D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E989FF9E-F2A7-487D-8458-D4993743124D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E989FF9E-F2A7-487D-8458-D4993743124D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E989FF9E-F2A7-487D-8458-D4993743124D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
