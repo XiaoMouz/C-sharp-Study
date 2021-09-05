@@ -63,6 +63,22 @@ namespace 方法的练习
                 }
             }
         }
+        //Q4用
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <returns></returns>
+        public static int GetSum(int[] nums)
+        {
+            int sum = 0;
+            for (int i = 0; i < nums.Length; i++)
+            {
+                sum += nums[i];
+            }
+            return sum;
+        }
+
         static void Main(string[] args)
         {
             #region 写一个方法，判断年份是否为闰年
