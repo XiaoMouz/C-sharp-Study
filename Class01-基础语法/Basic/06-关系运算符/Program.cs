@@ -41,10 +41,11 @@ namespace _06_关系运算符
                                     * mm++
                                     * 此时rev=11，mm=2
                                     */
-            int rev_2 = 10 + ++mm; /*等于
+            int m = 1;
+            int rev_2 = 10 + ++m;  /*等于
                                     * mm++
                                     * rev + mm
-                                    * 此时rev=12，mm=2
+                                    * 此时rev=12，m=2
                                     */
             Console.WriteLine("a={0},b={1},c={2}", mm, rev, rev_2);
 
