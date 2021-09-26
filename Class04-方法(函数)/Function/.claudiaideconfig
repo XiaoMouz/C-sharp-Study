@@ -1,0 +1,22 @@
+﻿{
+  "BackgroundImageAbsolutePath": "C:\\Users\\XiaoMouz\\OneDrive - Y368v\\Desktop\\Webdate\\Picture\\pixiv\\53256331_p0.png",
+  "BackgroundImagesDirectoryAbsolutePath": "C:\\Users\\XiaoMouz\\OneDrive - Y368v\\Desktop\\Webdate\\Picture\\pixiv",
+  "ExpandToIDE": true,
+  "Extensions": ".png, .jpg, .gif, .bmp",
+  "ImageBackgroundType": 0,
+  "ImageFadeAnimationInterval": "PT0S",
+  "ImageStretch": 3,
+  "IsLimitToMainlyEditorWindow": false,
+  "LoopSlideshow": true,
+  "MaxHeight": 0,
+  "MaxWidth": 0,
+  "Opacity": 0.35,
+  "PositionHorizon": 2,
+  "PositionVertical": 2,
+  "ShuffleSlideshow": true,
+  "SoftEdgeX": 0,
+  "SoftEdgeY": 0,
+  "UpdateImageInterval": "PT1H",
+  "ViewBoxPointX": 0,
+  "ViewBoxPointY": 0
+}
