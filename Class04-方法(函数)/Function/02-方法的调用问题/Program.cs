@@ -17,16 +17,18 @@ namespace _02_方法的调用问题
             int a = 3;
             Test(a);
             Console.WriteLine(a);
+            TestTwo();
         }
         public static void Test(int a)
         {
-            a = a + 5; //无法访问到Main内的a
+            a = a + 5; //无法访问到Main内的变量
         }
 
 
         public static void TestTwo()
         {
-            //Console.WriteLine(_number);
+            Console.WriteLine(_number);
+            //但是可以访问到在类内设定的静态字段
         }
     }
 }

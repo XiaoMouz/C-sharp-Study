@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace out练习
 {
@@ -17,8 +18,7 @@ namespace out练习
                 username = Console.ReadLine();
                 Console.WriteLine("Enter your password right now");
                 password = Console.ReadLine();
-                bool usernameJudge;
-                bool login = LoginSystem(username, password, out usernameJudge);
+                bool login = LoginSystem(username, password, out bool usernameJudge);
                 if (login)
                 {
                     Console.WriteLine("Success,Waiting command");

@@ -17,7 +17,7 @@ namespace 方法的练习
         }
         //Q2用
         /// <summary>
-        /// 将用户输入的值转换为数字
+        /// 将用户输入的值转换为数字，出错时会要求用户重新输入
         /// </summary>
         /// <param name="input">用户输入的值</param>
         /// <returns>数字</returns>
@@ -40,7 +40,7 @@ namespace 方法的练习
         }
         //Q3用
         /// <summary>
-        /// 判断用户输入Y还是N
+        /// 判断用户输入y还是n，限定小写，出错会要求重输
         /// </summary>
         /// <param name="input">获取到的用户输入</param>
         /// <returns>true或false</returns>
@@ -65,10 +65,10 @@ namespace 方法的练习
         }
         //Q4用
         /// <summary>
-        /// 
+        /// 输入数组，得出总和
         /// </summary>
-        /// <param name="nums"></param>
-        /// <returns></returns>
+        /// <param name="nums">数组</param>
+        /// <returns>总和</returns>
         public static int GetSum(int[] nums)
         {
             int sum = 0;
