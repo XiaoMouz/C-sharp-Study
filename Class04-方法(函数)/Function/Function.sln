@@ -9,9 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-方法的调用问题", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "方法的练习", "方法的练习\方法的练习.csproj", "{312CB925-9D8F-43AA-8A44-B2E6C0B79D8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-out参数", "03-out参数\03-out参数.csproj", "{DB0FB17D-222D-486C-888D-2995C8D2D68C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-out参数", "03-out参数\03-out参数.csproj", "{DB0FB17D-222D-486C-888D-2995C8D2D68C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "out练习", "out练习\out练习.csproj", "{126B101D-F9D7-48C2-8DEC-67395450419D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "out练习", "out练习\out练习.csproj", "{126B101D-F9D7-48C2-8DEC-67395450419D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryParse实现", "TryParse实现\TryParse实现.csproj", "{4D760E26-78ED-4E62-8A2C-23790E05FE1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-ref参数", "04-ref参数\04-ref参数.csproj", "{F280FCF1-6728-4F0D-8D2F-A967E18591AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ref练习", "ref练习\ref练习.csproj", "{2D7D5088-7292-418A-AE7F-84DAFD4665F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,18 @@ Global
 		{126B101D-F9D7-48C2-8DEC-67395450419D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{126B101D-F9D7-48C2-8DEC-67395450419D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{126B101D-F9D7-48C2-8DEC-67395450419D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D760E26-78ED-4E62-8A2C-23790E05FE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D760E26-78ED-4E62-8A2C-23790E05FE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D760E26-78ED-4E62-8A2C-23790E05FE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D760E26-78ED-4E62-8A2C-23790E05FE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F280FCF1-6728-4F0D-8D2F-A967E18591AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F280FCF1-6728-4F0D-8D2F-A967E18591AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F280FCF1-6728-4F0D-8D2F-A967E18591AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F280FCF1-6728-4F0D-8D2F-A967E18591AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D7D5088-7292-418A-AE7F-84DAFD4665F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D7D5088-7292-418A-AE7F-84DAFD4665F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D7D5088-7292-418A-AE7F-84DAFD4665F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D7D5088-7292-418A-AE7F-84DAFD4665F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
