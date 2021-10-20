@@ -13,6 +13,7 @@ namespace _04_ref参数
             //如果使用方法Add，则不会发生变动，如果使用方法Drop则需要新建接收用变量
             Add(ref cash);
             Console.WriteLine(cash);
+            #endregion
         }
         public static void Add(ref int cash)
         {

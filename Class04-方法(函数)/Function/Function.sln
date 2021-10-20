@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ref练习", "ref练习\ref�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-params参数", "05-params参数\05-params参数.csproj", "{F446384C-A3EF-49DD-B3D1-ACE50BD19101}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-方法重载", "06-方法重载\06-方法重载.csproj", "{626F482B-5882-4EA3-BB09-218A610E5254}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{F446384C-A3EF-49DD-B3D1-ACE50BD19101}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F446384C-A3EF-49DD-B3D1-ACE50BD19101}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F446384C-A3EF-49DD-B3D1-ACE50BD19101}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626F482B-5882-4EA3-BB09-218A610E5254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{626F482B-5882-4EA3-BB09-218A610E5254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{626F482B-5882-4EA3-BB09-218A610E5254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{626F482B-5882-4EA3-BB09-218A610E5254}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
