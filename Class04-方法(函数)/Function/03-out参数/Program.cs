@@ -50,10 +50,10 @@ namespace _03_out参数
         /// 计算一个数组的最大值、最小值、总和、平均值
         /// </summary>
         /// <param name="nums">待求数组</param>
-        /// <param name="max">多余返回的最大值</param>
-        /// <param name="min">多余返回的最小值</param>
-        /// <param name="sum">多余返回的总和</param>
-        /// <param name="avg">多余返回的平均值</param>
+        /// <param name="max">返回的最大值</param>
+        /// <param name="min">返回的最小值</param>
+        /// <param name="sum">返回的总和</param>
+        /// <param name="avg">返回的平均值</param>
         public static void TestOut(int[] nums, out int max, out int min, out int sum, out double avg)
         {
             //out参数要求在方法内部必须为其赋值
