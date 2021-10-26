@@ -50,7 +50,7 @@ namespace while_break作业
             //    Console.WriteLine("您的输入有误");
             //}
             #endregion
-
+            
             #region Q2回答
             //int i = 1;
             //while (i<=10)
