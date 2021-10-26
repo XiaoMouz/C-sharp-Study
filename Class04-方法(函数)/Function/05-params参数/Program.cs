@@ -7,8 +7,8 @@ namespace _05_params参数
         static void Main(string[] args)
         {
             //params
-            int[] s = { 99, 88, 77, 55 };
-            Test("张三",s);//在使用parmas后可以选择直接输入数组变量名、int类型数字、int变量，若不使用parmas则必须输入数组才能运行
+            //int[] s = { 99, 88, 77, 55 };
+            Test("张三",99,88,77,66);//在使用parmas后可以选择直接输入数组变量名或元素，若不使用parmas则必须输入数组才能运行
             Console.ReadKey();
         }
         public static void Test(string name, params int[] score)
