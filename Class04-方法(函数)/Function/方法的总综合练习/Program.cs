@@ -16,9 +16,9 @@ namespace 方法的总综合练习
             Console.WriteLine("Input number");
             while (true)
             {
-                if (ParseNum(Console.ReadLine(), Console.ReadLine(), out minNum, out maxNum))
+                if (ParseNum(Console.ReadLine(), Console.ReadLine(), out minNum, out maxNum)) //直接通过if内判断是否是正常字符
                 {
-                    if (minNum == maxNum)
+                    if (minNum == maxNum) //判断是否是相同数字
                     {
                         Console.WriteLine("输入的数不能为{0}，{1}", minNum, maxNum);
                         continue;
@@ -34,7 +34,7 @@ namespace 方法的总综合练习
                     continue;
                 }
             }
-            if (minNum==0&&maxNum==0)
+            if (minNum==0&&maxNum==0) //防止极小概率出现(为啥要改我内存)
             {
                 Console.WriteLine("操你妈，立刻给我回报bug");
             }
@@ -45,7 +45,14 @@ namespace 方法的总综合练习
             }
 
         }
-
+        /// <summary>
+        /// 判断是否能够转换为整数，并且返回最大值与最小值(自动完成对比并排序)
+        /// </summary>
+        /// <param name="input_1">用户输入的第一个字符</param>
+        /// <param name="input_2">用户输入的第二个字符</param>
+        /// <param name="minNum">最小值</param>
+        /// <param name="maxNum">最大值</param>
+        /// <returns>是否成功转换</returns>
         public static bool ParseNum(string input_1,string input_2,out int minNum,out int maxNum)
         {
             minNum = 0;
@@ -55,7 +62,7 @@ namespace 方法的总综合练习
             {
                 minNum = Convert.ToInt32(input_1);
                 maxNum = Convert.ToInt32(input_2);
-                if(minNum>maxNum)
+                if(minNum>maxNum) //进行大小比对
                 {
                     switchTemp = minNum;
                     minNum = maxNum;
@@ -68,7 +75,12 @@ namespace 方法的总综合练习
                 return false;
             }
         }
-
+        /// <summary>
+        /// 用于计算两数之间所有整数的总和(计算中会包括最小数与最大数)
+        /// </summary>
+        /// <param name="minNum">最小数</param>
+        /// <param name="maxNum">最大数</param>
+        /// <returns>总和</returns>
         public static int GetSum(int minNum,int maxNum)
         {
             int sum = 0;
