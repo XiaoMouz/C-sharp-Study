@@ -19,9 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-ref参数", "04-ref参�
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ref练习", "ref练习\ref练习.csproj", "{2D7D5088-7292-418A-AE7F-84DAFD4665F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-params参数", "05-params参数\05-params参数.csproj", "{F446384C-A3EF-49DD-B3D1-ACE50BD19101}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-params参数", "05-params参数\05-params参数.csproj", "{F446384C-A3EF-49DD-B3D1-ACE50BD19101}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-方法重载", "06-方法重载\06-方法重载.csproj", "{626F482B-5882-4EA3-BB09-218A610E5254}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-方法重载", "06-方法重载\06-方法重载.csproj", "{626F482B-5882-4EA3-BB09-218A610E5254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-方法的递归", "07-方法的递归\07-方法的递归.csproj", "{DC8F2F23-33D4-4C7F-A740-F7DEBCA144FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "方法的复习", "方法的复习\方法的复习.csproj", "{3357BE77-0AAF-428E-A4E7-055AFFC1EDDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +73,14 @@ Global
 		{626F482B-5882-4EA3-BB09-218A610E5254}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{626F482B-5882-4EA3-BB09-218A610E5254}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{626F482B-5882-4EA3-BB09-218A610E5254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8F2F23-33D4-4C7F-A740-F7DEBCA144FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8F2F23-33D4-4C7F-A740-F7DEBCA144FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8F2F23-33D4-4C7F-A740-F7DEBCA144FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8F2F23-33D4-4C7F-A740-F7DEBCA144FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3357BE77-0AAF-428E-A4E7-055AFFC1EDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3357BE77-0AAF-428E-A4E7-055AFFC1EDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3357BE77-0AAF-428E-A4E7-055AFFC1EDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3357BE77-0AAF-428E-A4E7-055AFFC1EDDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
