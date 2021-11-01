@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace 方法的复习
+namespace 方法的复习与练习
 {
     class Program
     {

@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-方法重载", "06-方�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-方法的递归", "07-方法的递归\07-方法的递归.csproj", "{DC8F2F23-33D4-4C7F-A740-F7DEBCA144FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "方法的复习", "方法的复习\方法的复习.csproj", "{3357BE77-0AAF-428E-A4E7-055AFFC1EDDE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "方法的复习与练习", "方法的复习与练习\方法的复习与练习.csproj", "{865989AA-55ED-4FDA-913C-3C633C8F0F7E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,10 +77,10 @@ Global
 		{DC8F2F23-33D4-4C7F-A740-F7DEBCA144FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC8F2F23-33D4-4C7F-A740-F7DEBCA144FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC8F2F23-33D4-4C7F-A740-F7DEBCA144FD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3357BE77-0AAF-428E-A4E7-055AFFC1EDDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3357BE77-0AAF-428E-A4E7-055AFFC1EDDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3357BE77-0AAF-428E-A4E7-055AFFC1EDDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3357BE77-0AAF-428E-A4E7-055AFFC1EDDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{865989AA-55ED-4FDA-913C-3C633C8F0F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{865989AA-55ED-4FDA-913C-3C633C8F0F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{865989AA-55ED-4FDA-913C-3C633C8F0F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{865989AA-55ED-4FDA-913C-3C633C8F0F7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
