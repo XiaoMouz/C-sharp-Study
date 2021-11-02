@@ -2,6 +2,7 @@
 
 namespace 方法的总综合练习
 {
+    //综合练习题1
     class Program
     {
         static void Main(string[] args)
