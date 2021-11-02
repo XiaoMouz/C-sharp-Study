@@ -30,7 +30,7 @@ namespace 方法的综合练习4
             {
                 str += s[i] + "|";
             }
-            return str+s[s.Length-1]
+            return str + s[s.Length - 1];
         }
         public static void NumArray(int[] nums)
         {
