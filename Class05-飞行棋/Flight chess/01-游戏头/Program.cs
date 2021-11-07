@@ -4,6 +4,9 @@ namespace _01_游戏头
 {
     class Program
     {
+        //使用静态字段模拟全局变量来初始化地图
+        public static int[] Maps = new int[100];
+
         static void Main(string[] args)
         {
             GameMenu();
@@ -32,6 +35,9 @@ namespace _01_游戏头
             Console.WriteLine("----------------------");
         }
         
+        public static void M1()
+        {
 
+        }
     }
 }
