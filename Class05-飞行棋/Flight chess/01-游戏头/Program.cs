@@ -138,6 +138,14 @@ namespace _01_游戏头
             #endregion
 
             #region 第一竖行
+            for (int i = 30; i < 35; i++)
+            {
+                for (int j = 0; j < 28; j++)
+                {
+                    Console.WriteLine("**");
+                }
+            }
+            #endregion
         }
     }
 }
