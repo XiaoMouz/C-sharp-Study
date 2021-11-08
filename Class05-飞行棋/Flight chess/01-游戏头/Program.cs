@@ -4,13 +4,15 @@ namespace _01_游戏头
 {
     class Program
     {
-        //使用静态字段模拟全局变量来初始化地图
+        //使用静态int数组模拟全局变量来初始化地图
         public static int[] Maps = new int[100];
-
+        //使用静态int数组来存储玩家a和玩家b的位置
+        public static int[] PlayersGPS = new int[2];
         static void Main(string[] args)
         {
             GameMenu();
             InitializationMap();
+            DrawMap();
 
         }
 
@@ -70,23 +72,72 @@ namespace _01_游戏头
             int[] landMine = { 4, 10, 31, 66, 72, 91 };
             for (int i = 0; i < landMine.Length; i++)
             {
-                Maps[landMine[i]] = 1;
+                Maps[landMine[i]] = 2;
             }
 
             int[] pause = { 9, 23, 57, 60, 80 };
             for (int i = 0; i < pause.Length; i++)
             {
-                Maps[pause[i]] = 1;
+                Maps[pause[i]] = 3;
             }
 
             int[] tunnel = { 14, 42, 65, 85, 90 };
             for (int i = 0; i < tunnel.Length; i++)
             {
-                Maps[tunnel[i]] = 1;
+                Maps[tunnel[i]] = 4;
             }
 
         }
 
+        public static void DrawMap()
+        {
+            #region 第一横行
+            for (int i = 0; i < 30; i++)
+            {
+                //当a和b坐标相同并且都位于地图上时则绘制括号
+                if ((PlayersGPS[0] == PlayersGPS[1])&&PlayersGPS[1]==i)
+                {
+                    Console.Write("<>");
+                }
+                else if (PlayersGPS[0] == i){
+                    //打印玩家A位置
+                    Console.Write("Ａ");
+                }else if (PlayersGPS[1] == i)
+                {
+                    //打印玩家B的位置
+                    Console.Write("Ｂ");
+                }
+                else
+                {
+                    //打印各个位置的符号
+                    switch (Maps[i])
+                    {
+                        case 0:
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.Write("□");
+                            break;
+                        case 1:
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.Write("●");
+                            break;
+                        case 2:
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.Write("☆");
+                            break;
+                        case 3:
+                            Console.ForegroundColor = ConsoleColor.DarkCyan;
+                            Console.Write("▲");
+                            break;
+                        case 4:
+                            Console.ForegroundColor = ConsoleColor.Magenta;
+                            Console.Write("卍");
+                            break;
+                    }
+                }
+            }
+            #endregion
 
+
+        }
     }
 }
