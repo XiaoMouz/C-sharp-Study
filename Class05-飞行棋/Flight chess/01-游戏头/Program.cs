@@ -76,46 +76,7 @@ namespace _01_游戏头
             #region 第一横行
             for (int i = 0; i < 30; i++)
             {
-                //当a和b坐标相同并且都位于地图上时则绘制括号
-                if ((PlayersGPS[0] == PlayersGPS[1])&&PlayersGPS[1]==i)
-                {
-                    Console.Write("<>");
-                }
-                else if (PlayersGPS[0] == i){
-                    //打印玩家A位置
-                    Console.Write("Ａ");
-                }else if (PlayersGPS[1] == i)
-                {
-                    //打印玩家B的位置
-                    Console.Write("Ｂ");
-                }
-                else
-                {
-                    //打印各个位置的符号
-                    switch (Maps[i])
-                    {
-                        case 0:
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            Console.Write("□");
-                            break;
-                        case 1:
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            Console.Write("●");
-                            break;
-                        case 2:
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.Write("☆");
-                            break;
-                        case 3:
-                            Console.ForegroundColor = ConsoleColor.DarkCyan;
-                            Console.Write("▲");
-                            break;
-                        case 4:
-                            Console.ForegroundColor = ConsoleColor.Magenta;
-                            Console.Write("卍");
-                            break;
-                    }
-                }
+                PrintfString(i);
             }
             #endregion
             //换行
@@ -128,53 +89,62 @@ namespace _01_游戏头
                 {
                     Console.Write("  ");
                 }
-                #region 打印地图
-                //当a和b坐标相同并且都位于地图上时则绘制括号
-                if ((PlayersGPS[0] == PlayersGPS[1])&&PlayersGPS[1]==i)
-                {
-                    Console.Write("<>");
-                }
-                else if (PlayersGPS[0] == i){
-                    //打印玩家A位置
-                    Console.Write("Ａ");
-                }else if (PlayersGPS[1] == i)
-                {
-                    //打印玩家B的位置
-                    Console.Write("Ｂ");
-                }
-                else
-                {
-                    //打印各个位置的符号
-                    switch (Maps[i])
-                    {
-                        case 0:
-                            Console.ForegroundColor = ConsoleColor.Yellow;
-                            Console.Write("□");
-                            break;
-                        case 1:
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            Console.Write("●");
-                            break;
-                        case 2:
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.Write("☆");
-                            break;
-                        case 3:
-                            Console.ForegroundColor = ConsoleColor.DarkCyan;
-                            Console.Write("▲");
-                            break;
-                        case 4:
-                            Console.ForegroundColor = ConsoleColor.Magenta;
-                            Console.Write("卍");
-                            break;
-                    }
-                }
-                #endregion
-                Console.WriteLine();
+                PrintfString(i); Console.WriteLine();
             }
             #endregion
 
 
+        }
+
+        /// <summary>
+        /// 对轮询到的数组下标值进行对比并将其打印
+        /// </summary>
+        private static void PrintfString(int i)
+        {
+            #region 打印地图
+            //当a和b坐标相同并且都位于地图上时则绘制括号
+            if ((PlayersGPS[0] == PlayersGPS[1]) && PlayersGPS[1] == i)
+            {
+                Console.Write("<>");
+            }
+            else if (PlayersGPS[0] == i)
+            {
+                //打印玩家A位置
+                Console.Write("Ａ");
+            }
+            else if (PlayersGPS[1] == i)
+            {
+                //打印玩家B的位置
+                Console.Write("Ｂ");
+            }
+            else
+            {
+                //打印各个位置的符号
+                switch (Maps[i])
+                {
+                    case 0:
+                        Console.ForegroundColor = ConsoleColor.Yellow;
+                        Console.Write("□");
+                        break;
+                    case 1:
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.Write("●");
+                        break;
+                    case 2:
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("☆");
+                        break;
+                    case 3:
+                        Console.ForegroundColor = ConsoleColor.DarkCyan;
+                        Console.Write("▲");
+                        break;
+                    case 4:
+                        Console.ForegroundColor = ConsoleColor.Magenta;
+                        Console.Write("卍");
+                        break;
+                }
+            }
+            #endregion
         }
     }
 }
