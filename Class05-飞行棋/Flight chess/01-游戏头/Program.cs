@@ -39,24 +39,6 @@ namespace _01_游戏头
             Console.WriteLine("----------------------");
         }
         
-        //其它解法，保留
-        //public static void MapPrintf()
-        //{
-        //    int[] market = { 4, 6, 11, 56 };
-        //    for (int i = 0; i < Maps.Length; i++)
-        //    {
-        //            if (Maps[i]==market[i])
-        //            {
-        //                Console.ForegroundColor = ConsoleColor.Red;
-        //                Console.Write("A");
-        //            }
-        //            else
-        //            {
-        //                Console.ForegroundColor = ConsoleColor.Gray;
-        //                Console.Write("-");
-        //            }
-        //    }
-        //}
 
         /// <summary>
         /// 地图初始化，将地图打上标记
@@ -136,16 +118,63 @@ namespace _01_游戏头
                 }
             }
             #endregion
+            //换行
+            Console.WriteLine();
 
             #region 第一竖行
             for (int i = 30; i < 35; i++)
             {
-                for (int j = 0; j < 28; j++)
+                for (int j = 0; j <= 28; j++)
                 {
-                    Console.WriteLine("**");
+                    Console.Write("  ");
                 }
+                #region 打印地图
+                //当a和b坐标相同并且都位于地图上时则绘制括号
+                if ((PlayersGPS[0] == PlayersGPS[1])&&PlayersGPS[1]==i)
+                {
+                    Console.Write("<>");
+                }
+                else if (PlayersGPS[0] == i){
+                    //打印玩家A位置
+                    Console.Write("Ａ");
+                }else if (PlayersGPS[1] == i)
+                {
+                    //打印玩家B的位置
+                    Console.Write("Ｂ");
+                }
+                else
+                {
+                    //打印各个位置的符号
+                    switch (Maps[i])
+                    {
+                        case 0:
+                            Console.ForegroundColor = ConsoleColor.Yellow;
+                            Console.Write("□");
+                            break;
+                        case 1:
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.Write("●");
+                            break;
+                        case 2:
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.Write("☆");
+                            break;
+                        case 3:
+                            Console.ForegroundColor = ConsoleColor.DarkCyan;
+                            Console.Write("▲");
+                            break;
+                        case 4:
+                            Console.ForegroundColor = ConsoleColor.Magenta;
+                            Console.Write("卍");
+                            break;
+                    }
+                }
+                #endregion
+                Console.WriteLine();
             }
             #endregion
+
+
         }
     }
 }
