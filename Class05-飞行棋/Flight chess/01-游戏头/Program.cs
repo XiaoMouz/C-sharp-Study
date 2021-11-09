@@ -108,7 +108,7 @@ namespace _01_游戏头
                             Console.ReadKey(true);
                             PlayersGPS[0] -= 6;
                             break;
-                        case 3:Console.WriteLine("玩家{0}")
+                        case 3:Console.WriteLine("玩家{0}");
                     }
                 }
             }
