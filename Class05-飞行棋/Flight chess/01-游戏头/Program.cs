@@ -40,12 +40,25 @@ namespace _01_游戏头
             #endregion
             //在游戏玩家输入成功后应当直接清屏重新打印游戏头
             Console.Clear();
-
             GameMenu();
-            Console.WriteLine("{0}的士兵使用A表示，{1}的士兵使用B表示", PlayerNames[0], PlayerNames[1]);
-            InitializationMap();
 
+            Console.WriteLine("{0}的士兵使用A表示，{1}的士兵使用B表示", PlayerNames[0], PlayerNames[1]);
+            
+            InitializationMap();
             DrawMap();
+
+            while (PlayersGPS[0]<99&&PlayersGPS[1]<99)
+            {
+                Console.WriteLine("{0}按任意键掷骰子", PlayerNames[0]);
+                Console.ReadKey(true);
+                Console.WriteLine("{0}掷出了{1}",PlayerNames[0],4);
+                Console.ReadKey(true);
+                PlayersGPS[0] += 4;
+                Console.WriteLine("{0}按任意键开始行动", PlayerNames[0]);
+                Console.ReadKey(true);
+                Console.WriteLine("{0}行动结束了", PlayerNames);
+                Console.ReadKey(true);
+            }
 
         }
 
@@ -109,6 +122,7 @@ namespace _01_游戏头
         /// </summary>
         public static void DrawMap()
         {
+            Console.WriteLine("图例：● 幸运轮盘    ☆ 地雷    ▲ 暂停    卍 时空隧道");
             #region 第一横行
             for (int i = 0; i < 30; i++)
             {
@@ -152,6 +166,8 @@ namespace _01_游戏头
                 Console.Write(PrintfString(i));
             }
             #endregion
+
+            Console.WriteLine();
         }
 
         /// <summary>
