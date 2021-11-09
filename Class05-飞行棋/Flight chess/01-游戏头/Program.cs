@@ -8,10 +8,43 @@ namespace _01_游戏头
         public static int[] Maps = new int[100];
         //使用静态int数组来存储玩家a和玩家b的位置
         public static int[] PlayersGPS = new int[2];
+        //使用静态字符串数组来存储玩家名称
+        public static string[] PlayerNames = new string[2];
         static void Main(string[] args)
         {
             GameMenu();
+            #region 输入玩家姓名
+            Console.ForegroundColor = ConsoleColor.Gray;
+            Console.WriteLine("请输入玩家A姓名");
+            PlayerNames[0] = Console.ReadLine();
+            while (PlayerNames[0]=="")
+            {
+                Console.WriteLine("玩家名称不能为空");
+                PlayerNames[0] = Console.ReadLine();
+            }
+            Console.WriteLine("输入玩家B的姓名");
+            PlayerNames[1] = Console.ReadLine();
+            while (PlayerNames[1]==""||PlayerNames[1]==PlayerNames[0])
+            {
+                if (PlayerNames[1] == "")
+                {
+                    Console.WriteLine("玩家B姓名不得为空");
+                    PlayerNames[1] = Console.ReadLine();
+                }
+                else
+                {
+                    Console.WriteLine("玩家B姓名不得与A相同");
+                    PlayerNames[1] = Console.ReadLine();
+                }
+            }
+            #endregion
+            //在游戏玩家输入成功后应当直接清屏重新打印游戏头
+            Console.Clear();
+
+            GameMenu();
+            Console.WriteLine("{0}的士兵使用A表示，{1}的士兵使用B表示", PlayerNames[0], PlayerNames[1]);
             InitializationMap();
+
             DrawMap();
 
         }
@@ -71,6 +104,9 @@ namespace _01_游戏头
 
         }
 
+        /// <summary>
+        /// 绘制地图
+        /// </summary>
         public static void DrawMap()
         {
             #region 第一横行
