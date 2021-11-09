@@ -58,6 +58,18 @@ namespace _01_游戏头
                 Console.ReadKey(true);
                 Console.WriteLine("{0}行动结束了", PlayerNames);
                 Console.ReadKey(true);
+
+                //当Player A踩到 PlayerB 时，PlayerB退6格
+                if (PlayersGPS[0] == PlayersGPS[1])
+                {
+                    Console.WriteLine("{0}踩到了{1}，{1}退6格", PlayerNames[0], PlayerNames[1],PlayerNames[1]);
+                    PlayersGPS[1] -= 6;
+                    Console.ReadKey(true);
+                }
+                else//踩到特殊点时
+                {
+
+                }
             }
 
         }
@@ -91,25 +103,25 @@ namespace _01_游戏头
         /// </summary>
         public static void InitializationMap()
         {
-            int[] luckyturn = { 6, 17, 48, 53, 88 };
+            int[] luckyturn = { 6, 17, 48, 53, 88 };//幸运轮盘坐标
             for (int i = 0; i < luckyturn.Length; i++)
             {
                 Maps[luckyturn[i]] = 1;
             }
 
-            int[] landMine = { 4, 10, 31, 66, 72, 91 };
+            int[] landMine = { 4, 10, 31, 66, 72, 91 };//地雷坐标
             for (int i = 0; i < landMine.Length; i++)
             {
                 Maps[landMine[i]] = 2;
             }
 
-            int[] pause = { 9, 23, 57, 60, 80 };
+            int[] pause = { 9, 23, 57, 60, 80 };//暂停回合坐标
             for (int i = 0; i < pause.Length; i++)
             {
                 Maps[pause[i]] = 3;
             }
 
-            int[] tunnel = { 14, 42, 65, 85, 90 };
+            int[] tunnel = { 14, 42, 65, 85, 90 };//时空隧道坐标
             for (int i = 0; i < tunnel.Length; i++)
             {
                 Maps[tunnel[i]] = 4;
