@@ -68,7 +68,48 @@ namespace _01_游戏头
                 }
                 else//踩到特殊点时
                 {
-
+                    switch(Maps[PlayersGPS[0]])
+                        {
+                        case 0:Console.WriteLine("已移动到方块上");
+                            Console.ReadKey(true);
+                            break;
+                        case 1:Console.WriteLine("您已踩到幸运轮盘，输入1和另一个玩家交换位置，输入2使另一个玩家退6格");
+                            while (true)
+                            {
+                                string input = Console.ReadLine();
+                                if (input == "1")
+                                {
+                                    Console.WriteLine("玩意{0}和玩家{1}交换位置", PlayerNames[0],PlayerNames[1]);
+                                    Console.ReadKey(true);
+                                    int temp = PlayersGPS[0];
+                                    PlayersGPS[0] = PlayersGPS[1];
+                                    PlayersGPS[1] = temp;
+                                    Console.WriteLine("交换完成，按任意键继续游戏");
+                                    Console.ReadKey(true);
+                                    break;
+                                }
+                                else if(input=="2")
+                                {
+                                    Console.WriteLine("玩家{0}轰炸了玩家{1}，玩家{2}退6格", PlayerNames[0], PlayerNames[1], PlayerNames[1]);
+                                    Console.ReadKey(true);
+                                    PlayersGPS[1] -= 6;
+                                    Console.WriteLine("玩家{0}退了6格", PlayerNames[1]);
+                                    Console.ReadKey(true);
+                                    break;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("只能输入1或2,1是和另一位玩家交换位置，2是轰炸对方使对方退后6格");
+                                    input = Console.ReadLine();
+                                }
+                            }
+                            break;
+                        case 2:Console.WriteLine("玩家{0}踩到了地雷,退6格",PlayerNames[0]);
+                            Console.ReadKey(true);
+                            PlayersGPS[0] -= 6;
+                            break;
+                        case 3:Console.WriteLine("玩家{0}")
+                    }
                 }
             }
 
