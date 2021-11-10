@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>_01_游戏头</RootNamespace>
+    <RootNamespace>_01_基础的面向对象项目</RootNamespace>
   </PropertyGroup>
 
 </Project>

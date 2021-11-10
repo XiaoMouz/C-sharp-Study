@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _01_基础的面向对象项目
+{
+    //在写好一个类之后，我们应该创建这个类的对象
+    //在这个类创建对象的过程称作[类的实例化]
+    public class Person
+    {
+        public string _name;//姓名
+        public int _age;//年龄
+        public char _gender;//性别
+
+        public void CHLSS()
+        {
+            Console.WriteLine("{0}是一位{1}岁的{2}性，能够执行CHLSS这些活动",this._name,this._age,this._gender);//this表示这个类的对象
+        }
+    }
+}
