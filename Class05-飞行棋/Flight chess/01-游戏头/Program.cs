@@ -49,70 +49,86 @@ namespace _01_游戏头
 
             while (PlayersGPS[0]<99&&PlayersGPS[1]<99)
             {
-                Console.WriteLine("{0}按任意键掷骰子", PlayerNames[0]);
-                Console.ReadKey(true);
-                Console.WriteLine("{0}掷出了{1}",PlayerNames[0],4);
-                Console.ReadKey(true);
-                PlayersGPS[0] += 4;
-                Console.WriteLine("{0}按任意键开始行动", PlayerNames[0]);
-                Console.ReadKey(true);
-                Console.WriteLine("{0}行动结束了", PlayerNames);
-                Console.ReadKey(true);
+                PlayGame();
+            }//while
 
-                //当Player A踩到 PlayerB 时，PlayerB退6格
-                if (PlayersGPS[0] == PlayersGPS[1])
-                {
-                    Console.WriteLine("{0}踩到了{1}，{1}退6格", PlayerNames[0], PlayerNames[1],PlayerNames[1]);
-                    PlayersGPS[1] -= 6;
-                    Console.ReadKey(true);
-                }
-                else//踩到特殊点时
-                {
-                    switch(Maps[PlayersGPS[0]])
-                        {
-                        case 0:Console.WriteLine("已移动到方块上");
-                            Console.ReadKey(true);
-                            break;
-                        case 1:Console.WriteLine("您已踩到幸运轮盘，输入1和另一个玩家交换位置，输入2使另一个玩家退6格");
-                            while (true)
-                            {
-                                string input = Console.ReadLine();
-                                if (input == "1")
-                                {
-                                    Console.WriteLine("玩意{0}和玩家{1}交换位置", PlayerNames[0],PlayerNames[1]);
-                                    Console.ReadKey(true);
-                                    int temp = PlayersGPS[0];
-                                    PlayersGPS[0] = PlayersGPS[1];
-                                    PlayersGPS[1] = temp;
-                                    Console.WriteLine("交换完成，按任意键继续游戏");
-                                    Console.ReadKey(true);
-                                    break;
-                                }
-                                else if(input=="2")
-                                {
-                                    Console.WriteLine("玩家{0}轰炸了玩家{1}，玩家{2}退6格", PlayerNames[0], PlayerNames[1], PlayerNames[1]);
-                                    Console.ReadKey(true);
-                                    PlayersGPS[1] -= 6;
-                                    Console.WriteLine("玩家{0}退了6格", PlayerNames[1]);
-                                    Console.ReadKey(true);
-                                    break;
-                                }
-                                else
-                                {
-                                    Console.WriteLine("只能输入1或2,1是和另一位玩家交换位置，2是轰炸对方使对方退后6格");
-                                    input = Console.ReadLine();
-                                }
-                            }
-                            break;
-                        case 2:Console.WriteLine("玩家{0}踩到了地雷,退6格",PlayerNames[0]);
-                            Console.ReadKey(true);
-                            PlayersGPS[0] -= 6;
-                            break;
-                        case 3:Console.WriteLine("玩家{0}");
-                    }
-                }
+        }
+
+        public static void PlayGame()
+        {
+            Console.WriteLine("{0}按任意键掷骰子", PlayerNames[0]);
+            Console.ReadKey(true);
+            Console.WriteLine("{0}掷出了{1}", PlayerNames[0], 4);
+            Console.ReadKey(true);
+            PlayersGPS[0] += 4;
+            Console.WriteLine("{0}按任意键开始行动", PlayerNames[0]);
+            Console.ReadKey(true);
+            Console.WriteLine("{0}行动结束了", PlayerNames);
+            Console.ReadKey(true);
+
+            //当Player A踩到 PlayerB 时，PlayerB退6格
+            if (PlayersGPS[0] == PlayersGPS[1])
+            {
+                Console.WriteLine("{0}踩到了{1}，{1}退6格", PlayerNames[0], PlayerNames[1], PlayerNames[1]);
+                PlayersGPS[1] -= 6;
+                Console.ReadKey(true);
             }
-
+            else//踩到特殊点时
+            {
+                switch (Maps[PlayersGPS[0]])
+                {
+                    case 0:
+                        Console.WriteLine("已移动到方块上");
+                        Console.ReadKey(true);
+                        break;
+                    case 1:
+                        Console.WriteLine("{0}已踩到幸运轮盘，输入1和另一个玩家交换位置，输入2使另一个玩家退6格", PlayerNames[0]);
+                        while (true)
+                        {
+                            string input = Console.ReadLine();
+                            if (input == "1")
+                            {
+                                Console.WriteLine("玩意{0}和玩家{1}交换位置", PlayerNames[0], PlayerNames[1]);
+                                Console.ReadKey(true);
+                                int temp = PlayersGPS[0];
+                                PlayersGPS[0] = PlayersGPS[1];
+                                PlayersGPS[1] = temp;
+                                Console.WriteLine("交换完成，按任意键继续游戏");
+                                Console.ReadKey(true);
+                                break;
+                            }
+                            else if (input == "2")
+                            {
+                                Console.WriteLine("玩家{0}轰炸了玩家{1}，玩家{2}退6格", PlayerNames[0], PlayerNames[1], PlayerNames[1]);
+                                Console.ReadKey(true);
+                                PlayersGPS[1] -= 6;
+                                Console.WriteLine("玩家{0}退了6格", PlayerNames[1]);
+                                Console.ReadKey(true);
+                                break;
+                            }
+                            else
+                            {
+                                Console.WriteLine("只能输入1或2,1是和另一位玩家交换位置，2是轰炸对方使对方退后6格");
+                            }
+                        }
+                        break;
+                    case 2:
+                        Console.WriteLine("玩家{0}踩到了地雷,退6格", PlayerNames[0]);
+                        Console.ReadKey(true);
+                        PlayersGPS[0] -= 6;
+                        break;
+                    case 3:
+                        Console.WriteLine("玩家{0}暂停一回合", PlayerNames[0]);
+                        break;
+                    case 4:
+                        Console.WriteLine("玩家{0}踩到了时空隧道，前进10格", PlayerNames[0]);
+                        PlayersGPS[0] += 10;
+                        Console.ReadKey(true);
+                        break;
+                }//Switch 判断位置
+            }//else
+            Console.Clear();
+            DrawMap();
         }
 
 
@@ -226,7 +242,7 @@ namespace _01_游戏头
         /// <summary>
         /// 对轮询到的数组下标值进行对比并将其打印
         /// </summary>
-        private static string PrintfString(int i)
+        public static string PrintfString(int i)
         {
             string s = "";
             //当a和b坐标相同并且都位于地图上时则绘制括号
