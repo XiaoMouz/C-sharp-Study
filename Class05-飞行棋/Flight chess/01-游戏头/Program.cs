@@ -10,6 +10,8 @@ namespace _01_游戏头
         public static int[] PlayersGPS = new int[2];
         //使用静态字符串数组来存储玩家名称
         public static string[] PlayerNames = new string[2];
+        //玩家状态标记
+        public static bool[] State = new bool[2];
         static void Main(string[] args)
         {
             GameMenu();
@@ -47,62 +49,96 @@ namespace _01_游戏头
             InitializationMap();
             DrawMap();
 
+            //游戏进行时
             while (PlayersGPS[0]<99&&PlayersGPS[1]<99)
             {
-                PlayGame();
-            }//while
+                if (State[0] == false){
+                    PlayGame(0);
+                }
+                else
+                {
+                    State[0] = false;
+                }
+                if(PlayersGPS[0] >= 99)
+                {
+                    Console.WriteLine("玩家{0}获胜", PlayerNames[0]);
+                    break;
+                }
+
+                if (State[1] == false)
+                {
+                    PlayGame(1);
+                }
+                else
+                {
+                    State[1] = false;
+                }
+                if(PlayersGPS[1]>= 99)
+                {
+                    Console.WriteLine("玩家{0}获胜", PlayerNames[1]);
+                    break;
+                }
+
+            }
 
         }
 
-        public static void PlayGame()
+        /// <summary>
+        /// 游戏进行中的计算
+        /// </summary>
+        /// <param name="playerNumber">轮到的玩家id</param>
+        public static void PlayGame(int playerNumber)
         {
-            Console.WriteLine("{0}按任意键掷骰子", PlayerNames[0]);
+            Random r=new Random();
+            int rNumber = r.Next(1, 7);
+            Console.WriteLine("{0}按任意键掷骰子", PlayerNames[playerNumber]);
             Console.ReadKey(true);
-            Console.WriteLine("{0}掷出了{1}", PlayerNames[0], 4);
+            Console.WriteLine("{0}掷出了{1}", PlayerNames[playerNumber], rNumber);
             Console.ReadKey(true);
-            PlayersGPS[0] += 4;
-            Console.WriteLine("{0}按任意键开始行动", PlayerNames[0]);
+            PlayersGPS[playerNumber] += rNumber;
+            FixGPS();
+            Console.WriteLine("{0}按任意键开始行动", PlayerNames[playerNumber]);
             Console.ReadKey(true);
             Console.WriteLine("{0}行动结束了", PlayerNames);
             Console.ReadKey(true);
 
             //当Player A踩到 PlayerB 时，PlayerB退6格
-            if (PlayersGPS[0] == PlayersGPS[1])
+            if (PlayersGPS[playerNumber] == PlayersGPS[1 - playerNumber])
             {
-                Console.WriteLine("{0}踩到了{1}，{1}退6格", PlayerNames[0], PlayerNames[1], PlayerNames[1]);
-                PlayersGPS[1] -= 6;
+                Console.WriteLine("{0}踩到了{1}，{1}退6格", PlayerNames[playerNumber], PlayerNames[1 - playerNumber], PlayerNames[1 - playerNumber]);
+                PlayersGPS[1 - playerNumber] -= 6;
                 Console.ReadKey(true);
             }
             else//踩到特殊点时
             {
-                switch (Maps[PlayersGPS[0]])
+                switch (Maps[PlayersGPS[playerNumber]])
                 {
                     case 0:
                         Console.WriteLine("已移动到方块上");
                         Console.ReadKey(true);
                         break;
                     case 1:
-                        Console.WriteLine("{0}已踩到幸运轮盘，输入1和另一个玩家交换位置，输入2使另一个玩家退6格", PlayerNames[0]);
+                        Console.WriteLine("{0}已踩到幸运轮盘，输入1和另一个玩家交换位置，输入2使另一个玩家退6格", PlayerNames[playerNumber]);
                         while (true)
                         {
                             string input = Console.ReadLine();
                             if (input == "1")
                             {
-                                Console.WriteLine("玩意{0}和玩家{1}交换位置", PlayerNames[0], PlayerNames[1]);
+                                Console.WriteLine("玩意{0}和玩家{1}交换位置", PlayerNames[playerNumber], PlayerNames[1 - playerNumber]);
                                 Console.ReadKey(true);
-                                int temp = PlayersGPS[0];
-                                PlayersGPS[0] = PlayersGPS[1];
-                                PlayersGPS[1] = temp;
+                                int temp = PlayersGPS[playerNumber];
+                                PlayersGPS[playerNumber] = PlayersGPS[1 - playerNumber];
+                                PlayersGPS[1 - playerNumber] = temp;
                                 Console.WriteLine("交换完成，按任意键继续游戏");
                                 Console.ReadKey(true);
                                 break;
                             }
                             else if (input == "2")
                             {
-                                Console.WriteLine("玩家{0}轰炸了玩家{1}，玩家{2}退6格", PlayerNames[0], PlayerNames[1], PlayerNames[1]);
+                                Console.WriteLine("玩家{0}轰炸了玩家{1}，玩家{2}退6格", PlayerNames[playerNumber], PlayerNames[1 - playerNumber], PlayerNames[1 - playerNumber]);
                                 Console.ReadKey(true);
-                                PlayersGPS[1] -= 6;
-                                Console.WriteLine("玩家{0}退了6格", PlayerNames[1]);
+                                PlayersGPS[1- playerNumber] -= 6;
+                                Console.WriteLine("玩家{0}退了6格", PlayerNames[1 - playerNumber]);
                                 Console.ReadKey(true);
                                 break;
                             }
@@ -113,20 +149,22 @@ namespace _01_游戏头
                         }
                         break;
                     case 2:
-                        Console.WriteLine("玩家{0}踩到了地雷,退6格", PlayerNames[0]);
+                        Console.WriteLine("玩家{0}踩到了地雷,退6格", PlayerNames[playerNumber]);
                         Console.ReadKey(true);
-                        PlayersGPS[0] -= 6;
+                        PlayersGPS[playerNumber] -= 6;
                         break;
                     case 3:
-                        Console.WriteLine("玩家{0}暂停一回合", PlayerNames[0]);
+                        Console.WriteLine("玩家{0}暂停一回合", PlayerNames[playerNumber]);
+                        State[playerNumber] = true;
                         break;
                     case 4:
-                        Console.WriteLine("玩家{0}踩到了时空隧道，前进10格", PlayerNames[0]);
-                        PlayersGPS[0] += 10;
+                        Console.WriteLine("玩家{0}踩到了时空隧道，前进10格", PlayerNames[playerNumber]);
+                        PlayersGPS[playerNumber] += 10;
                         Console.ReadKey(true);
                         break;
                 }//Switch 判断位置
             }//else
+            FixGPS();
             Console.Clear();
             DrawMap();
         }
@@ -289,5 +327,29 @@ namespace _01_游戏头
             }
             return s;
         }
+
+        /// <summary>
+        /// 当玩家坐标发生改变时，调用此方法防止跳出地图
+        /// </summary>
+        public static void FixGPS()
+        {
+            if (PlayersGPS[0] < 0)
+            {
+                PlayersGPS[0] = 0;
+            }
+            if (PlayersGPS[0] > 99)
+            {
+                PlayersGPS[0] = 99;
+            }
+            if (PlayersGPS[1] < 0)
+            {
+                PlayersGPS[1] = 0;
+            }
+            if (PlayersGPS[1] > 99)
+            {
+                PlayersGPS[1] = 99;
+            }
+        }
+
     }
 }
