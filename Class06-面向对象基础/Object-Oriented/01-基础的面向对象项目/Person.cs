@@ -13,7 +13,9 @@ namespace _01_基础的面向对象项目
         public string _name;//姓名
         public string Name//透过属性保护字段
         {
+            //当输出属性时优先使用get方法
             get { return _name; }//控制取值
+            //为属性赋值时优先使用set方法
             set { _name = value; }//控制赋值
         }
 
