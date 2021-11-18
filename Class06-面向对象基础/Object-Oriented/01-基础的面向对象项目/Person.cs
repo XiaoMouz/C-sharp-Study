@@ -20,8 +20,19 @@ namespace _01_基础的面向对象项目
             set { _name = value; }//控制赋值
         }
 
-        public int _age;//年龄
-        public char _gender;//性别
+        int _age;//年龄
+        public int Age
+        {
+            get { return _age; }
+            set { _age = value; }
+        }
+
+        char _gender;//性别
+        public char Gender
+        {
+            get { return _gender; }
+            set { _gender = value; }
+        }
 
         public void CHLSS()//非静态方法
         {

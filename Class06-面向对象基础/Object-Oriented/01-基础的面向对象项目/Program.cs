@@ -18,9 +18,15 @@ namespace _01_基础的面向对象项目
 
             //创建Person类的对象
             Person aNewPerson = new Person();//自定义类
-            aNewPerson._name = "小A";
-            aNewPerson._age = 13;
-            aNewPerson._gender = '男';
+
+            //此时这些都无法使用
+            //aNewPerson._name = "小A";
+            //aNewPerson._age = 13;
+            //aNewPerson._gender = '男';
+            aNewPerson.Name = "A";
+            aNewPerson.Age = -23;
+            aNewPerson.Gender = '男';
+
 
             //调用类的方法
             aNewPerson.CHLSS();
