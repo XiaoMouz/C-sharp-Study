@@ -10,7 +10,8 @@ namespace _01_基础的面向对象项目
     //在这个类创建对象的过程称作[类的实例化]
     public class Person
     {
-        public string _name;//姓名
+        //public 将字段进行保护，取消public访问级别
+        string _name;//姓名
         public string Name//透过属性保护字段
         {
             get { return _name; }//控制取值
