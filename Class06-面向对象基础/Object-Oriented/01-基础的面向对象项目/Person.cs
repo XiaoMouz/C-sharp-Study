@@ -24,19 +24,30 @@ namespace _01_基础的面向对象项目
         public int Age
         {
             get { return _age; }
-            set { _age = value; }
+            set {
+                if (value < 0 || value > 150)
+                {
+                    value = 0;
+                }
+                _age = value; }
         }
 
         char _gender;//性别
         public char Gender
         {
-            get { return _gender; }
+            get {
+                if (_gender != '男' && _gender != '女')
+                {
+                    return _gender = '男';
+                }
+
+                return _gender; }
             set { _gender = value; }
         }
 
         public void CHLSS()//非静态方法
         {
-            Console.WriteLine("{0}是一位{1}岁的{2}性，能够执行CHLSS这些活动",this._name,this._age,this._gender);//this表示这个类的对象
+            Console.WriteLine("{0}是一位{1}岁的{2}性，能够执行CHLSS这些活动",this.Name,this.Age,this.Gender);//this表示这个类的对象
         }
 
         public static void CHALL()//静态方法
