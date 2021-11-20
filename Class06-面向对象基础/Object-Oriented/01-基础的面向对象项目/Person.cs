@@ -12,6 +12,7 @@ namespace _01_基础的面向对象项目
     {
         //public 将字段进行保护，取消public访问级别
         string _name;//姓名
+
         public string Name//透过属性保护字段
         {
             //当输出属性时优先使用get方法
@@ -44,6 +45,8 @@ namespace _01_基础的面向对象项目
                 return _gender; }
             set { _gender = value; }
         }
+        //一个属性，若有get和set那么代表它是可读可写的
+        //若只有get则代表它是只读的，若只有set则代表它是只可写的
 
         public void CHLSS()//非静态方法
         {
