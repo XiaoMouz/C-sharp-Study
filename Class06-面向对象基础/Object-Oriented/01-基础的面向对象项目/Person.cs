@@ -11,9 +11,9 @@ namespace _01_基础的面向对象项目
     public class Person
     {
         //public 将字段进行保护，取消public访问级别
-        string _name;//姓名
+        string _name;// 字段  名字
 
-        public string Name//透过属性保护字段
+        public string Name//属性，透过属性保护字段
         {
             //当输出属性时优先使用get方法
             get { return _name; }//控制取值
@@ -48,6 +48,8 @@ namespace _01_基础的面向对象项目
         //一个属性，若有get和set那么代表它是可读可写的
         //若只有get则代表它是只读的，若只有set则代表它是只可写的
 
+
+        //方法
         public void CHLSS()//非静态方法
         {
             Console.WriteLine("{0}是一位{1}岁的{2}性，能够执行CHLSS这些活动",this.Name,this.Age,this.Gender);//this表示这个类的对象
