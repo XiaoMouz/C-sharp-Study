@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-基础的面向对象项目", "01-基础的面向对象项目\01-基础的面向对象项目.csproj", "{6BEF6649-4F29-4B16-AF43-2C4B24CA8FE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-静态函数和函数", "02-静态函数和函数\02-静态函数和函数.csproj", "{8EF9E23A-F20D-4D2E-9A9D-19C69B1BCE3C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-静态函数和函数", "02-静态函数和函数\02-静态函数和函数.csproj", "{8EF9E23A-F20D-4D2E-9A9D-19C69B1BCE3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-面向对象练习", "03-面向对象练习\03-面向对象练习.csproj", "{9B06BD2B-9F33-4B2E-9778-D02F980C053D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{8EF9E23A-F20D-4D2E-9A9D-19C69B1BCE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8EF9E23A-F20D-4D2E-9A9D-19C69B1BCE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8EF9E23A-F20D-4D2E-9A9D-19C69B1BCE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B06BD2B-9F33-4B2E-9778-D02F980C053D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B06BD2B-9F33-4B2E-9778-D02F980C053D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B06BD2B-9F33-4B2E-9778-D02F980C053D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B06BD2B-9F33-4B2E-9778-D02F980C053D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
