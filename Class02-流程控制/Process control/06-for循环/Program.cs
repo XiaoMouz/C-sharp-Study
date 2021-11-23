@@ -7,7 +7,7 @@ namespace _06_for循环
         static void Main(string[] args)
         {
             //输入for然后按下两次tab
-            //输入forr然后按下两次tab便是i-- for循环
+            //输入for然后按下两次tab便是i-- for循环
             //在控制台打印10次Hello,world
             //for (int i = 0; i < 10; i++)
             //{

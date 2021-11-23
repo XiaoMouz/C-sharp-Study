@@ -8,6 +8,8 @@ namespace _01_基础的面向对象项目
 {
     //在写好一个类之后，我们应该创建这个类的对象
     //在这个类创建对象的过程称作[类的实例化]
+    //而在创建好对象后，需要对里面的属性进行赋值
+    //这称作[对象初始化]
     public class Person
     {
         //public 将字段进行保护，取消public访问级别
@@ -25,7 +27,7 @@ namespace _01_基础的面向对象项目
         public int Age
         {
             get { return _age; }
-            set {
+            set { //exp
                 if (value < 0 || value > 150)
                 {
                     value = 0;
@@ -36,7 +38,7 @@ namespace _01_基础的面向对象项目
         char _gender;//性别
         public char Gender
         {
-            get {
+            get { //exp
                 if (_gender != '男' && _gender != '女')
                 {
                     return _gender = '男';
