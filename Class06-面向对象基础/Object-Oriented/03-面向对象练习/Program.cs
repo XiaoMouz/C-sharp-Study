@@ -6,7 +6,7 @@ namespace _03_面向对象练习
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
