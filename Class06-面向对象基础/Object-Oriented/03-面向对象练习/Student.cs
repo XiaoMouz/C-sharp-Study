@@ -8,6 +8,9 @@ namespace _03_面向对象练习
 {
     internal class Student
     {
+        //构造函数
+
+
         #region 属性与字段
         private string _name;
         public string Name
@@ -20,13 +23,23 @@ namespace _03_面向对象练习
         public int Age
         {
             get { return _age; }
-            set { _age = value; }
+            set { 
+                if(value < 0|| value>100)
+                {
+                    value = 0;
+                }
+                _age = value; }
         }
 
         private char _gender;
         public char Gender
         {
-            get { return _gender; }
+            get { 
+                if(_gender !='男'&&_gender != '女')
+                {
+                    return _gender = '男';
+                }
+                return _gender; }
             set { _gender = value; }
         }
 
@@ -51,7 +64,16 @@ namespace _03_面向对象练习
             set { _english = value; }
         }
         #endregion
+        
+        public void SayHello()
+        {
+            Console.WriteLine("{0},you are {1},your {2} old",this.Name,this.Gender, this.Age);
 
+        }
 
+        public void Score()
+        {
+            Console.WriteLine("your math score is {0},chinese score = {1},english score = {2}", this.Math, this.Chinese, this.English);
+        }
     }
 }
