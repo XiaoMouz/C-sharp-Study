@@ -9,7 +9,26 @@ namespace _03_面向对象练习
     internal class Student
     {
         //构造函数
+        //构造函数在创建对象时便会执行
+        public Student(string name,char gender,int age)
+        {
+            this.Name = name;
+            this.Gender = gender;
+            this.Age = age;
+            this.Chinese = 0;
+            this.English = 0;
+            this.Math = 0;
+        }
 
+        public Student(string name,char gender,int age,int chinese,int english,int math)
+        {
+            this.Name = name;
+            this.Gender = gender;
+            this.Age = age;
+            this.Chinese = chinese;
+            this.English = english;
+            this.Math = math;
+        }
 
         #region 属性与字段
         private string _name;

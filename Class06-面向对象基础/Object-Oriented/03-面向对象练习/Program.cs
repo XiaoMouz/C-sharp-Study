@@ -6,18 +6,12 @@ namespace _03_面向对象练习
     {
         static void Main(string[] args)
         {
-            Student ZhangSan=new Student();
-            ZhangSan.Name = "张三";
-            ZhangSan.Age = 13;
-            ZhangSan.Gender = '男';
+            Student ZhangSan=new Student("张三",'男',13);
             ZhangSan.Math = 121;
             ZhangSan.Chinese = 100;
             ZhangSan.English = 100;
 
-            Student XiaoLan=new Student();
-            XiaoLan.Name = "小蓝";
-            XiaoLan.Age = 13;
-            XiaoLan.Gender = '中';
+            Student XiaoLan=new Student("小蓝",'男',14);
             XiaoLan.Math = 100;
             XiaoLan.Chinese = 100;
             XiaoLan.English = 100;
