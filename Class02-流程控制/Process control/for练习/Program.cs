@@ -73,18 +73,18 @@ namespace for练习
             //}
             #endregion
             //Q4：水仙花数
-            #region
-            //for (int i = 100; i <= 999; i++)
-            //{
-            //    int a = i / 100;
-            //    int b = i % 100 / 10;
-            //    int c = i % 10;
-            //    if(a*a*a+b*b*b+c*c*c==i)
-            //    {
-            //        Console.WriteLine(i);
-            //    }
-            //}
-            //Console.ReadKey();
+            #region Q4 AW
+            for (int i = 100; i <= 999; i++)
+            {
+                int a = i / 100;
+                int b = i % 100 / 10;
+                int c = i % 10;
+                if(a*a*a+b*b*b+c*c*c==i)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            Console.ReadKey();
             #endregion
         }
     }
