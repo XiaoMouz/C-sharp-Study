@@ -87,7 +87,6 @@ namespace _03_面向对象练习
         public void SayHello()
         {
             Console.WriteLine("{0},you are {1},your {2} old",this.Name,this.Gender, this.Age);
-
         }
 
         public void Score()

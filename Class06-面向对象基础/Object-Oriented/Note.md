@@ -106,3 +106,25 @@ new的作用:
 
 
 
+this的作用:
+
+- 代表当前类的对象
+
+- 在类中显示调用本类的构造函数（避免重复代码）
+
+```c#
+public Student(string 1,int 2,int 3,int 4){
+ this.1 = 1;
+ this.2 = 2;
+ this.3 = 3;
+ this.4 = 4;
+}
+
+public Student(string 1,int 2,int3):this(1,2,3,any){
+//不存在的参数就随意赋值即可(切忌属性保护
+)
+}
+```
+
+
+
