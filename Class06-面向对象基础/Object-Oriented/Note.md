@@ -121,10 +121,24 @@ public Student(string 1,int 2,int 3,int 4){
 }
 
 public Student(string 1,int 2,int3):this(1,2,3,any){
-//不存在的参数就随意赋值即可(切忌属性保护
-)
+//不存在的参数就随意赋值即可(切忌属性保护）
 }
 ```
 
 
+
+# 析构函数 
+
+```c#
+~classname(){
+
+}
+```
+
+在**程序结束后**析构函数才会执行(~~*指在该类对象停用并且抛弃后即是该子进程结束，此时调用析构函数*~~)
+
+作用：
+
+- 释放资源
+- 调用GC（Garbage Collection）回收器
 
