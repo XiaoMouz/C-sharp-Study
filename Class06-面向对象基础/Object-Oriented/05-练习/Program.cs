@@ -6,7 +6,8 @@ namespace _05_练习
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Ticket jk = new Ticket(8);
+            jk.ShowTicket();
         }
     }
 }

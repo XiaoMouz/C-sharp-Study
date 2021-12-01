@@ -10,7 +10,7 @@ namespace _05_练习
     {
         public Ticket(double distance)
         {
-            if(distance < 0||distance !=0)
+            if(distance < 0)
             {
                 this._distance = 0;
             }
@@ -53,5 +53,10 @@ namespace _05_练习
             }
         }
         #endregion
+
+        public void ShowTicket()
+        {
+            Console.WriteLine("the {0}km,used {1}$", this.Distance, this.Price);
+        }
     }
 }
