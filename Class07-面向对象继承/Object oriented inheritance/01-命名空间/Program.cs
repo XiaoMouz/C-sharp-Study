@@ -9,7 +9,7 @@ namespace _01_命名空间
         {
             Console.WriteLine("Hello World!");
 
-            Ticket a = new Ticket();
+            Ticket a = new Ticket(12);
 
         }
     }
