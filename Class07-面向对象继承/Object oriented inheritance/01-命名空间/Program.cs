@@ -7,6 +7,7 @@ namespace _01_命名空间
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
         }
     }
 }
