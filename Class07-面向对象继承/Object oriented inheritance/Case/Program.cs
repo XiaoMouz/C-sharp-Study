@@ -1,16 +1,12 @@
 ﻿using System;
-using _Ticket;
 
-namespace _01_命名空间
+namespace Case
 {
-    internal class Program
+    class Program
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
-            Ticket a = new Ticket();
-
         }
     }
 }
