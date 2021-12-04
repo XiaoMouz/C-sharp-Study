@@ -126,3 +126,15 @@ pp2 = new string(ch);//重新赋值
 
 
 ## String Builder (SB)
+
+**String Builder：可变字符串对象**
+
+String Builder效率更高，并且没有去堆中新建空间，因此也更节省内存
+
+String Builder并不能代替String，一般使用String Builder来处理需要多次重复赋值的字符串
+
+`using System.Text;`调用命名空间
+
+`StringBuilder <name> = new StringBuilder();`新建对象
+
+`<name>.ToString();`转换为String字符串

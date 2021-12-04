@@ -14,14 +14,18 @@ namespace _03_String_Builder_SB_
             string s = null;
             Stopwatch runningTime = new Stopwatch();//创建计时器，需要System.Diagnostics 
             runningTime.Start();//计时开始
-            for (int i = 0; i < 10000; i++)
+            for (int i = 0; i < 100000; i++)
             {
+                sb.Append(i);//利用SB进行增减
+                //计时器：00:00:00.0035801
 
-                s += i;//连接、重新赋值
+                //s += i;//连接、重新赋值
+                //计时器：00:00:14.2638965
             }
             runningTime.Stop();//计时结束
             Console.WriteLine(runningTime.Elapsed);
-            Console.WriteLine(s);
+            //Console.WriteLine(s);
+            Console.WriteLine(sb.ToString());//转换为string后打印
         }
     }
 }
