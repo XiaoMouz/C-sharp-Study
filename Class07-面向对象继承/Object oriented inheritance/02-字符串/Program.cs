@@ -17,7 +17,7 @@ namespace _02_字符串
             char[] ch = pp2.ToCharArray();//将string转为字符数组
             ch[0] = 'b';
             //而后通过创建对象方法来赋值
-            pp2 = new string(ch);
+             
             Console.WriteLine(pp2[0]);
             Console.WriteLine(pp2);
             //以上

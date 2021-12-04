@@ -100,3 +100,29 @@ Console.WriteLine(s[0]);
 //运行即可
 ```
 
+## 修改字符串
+
+如果需要修改string中某一下标元素，只能通过如下方式进行
+
+```c#
+string pp2 = "abcdefg";
+char[] ch = pp2.ToCharArray();//将string转为字符数组
+ch[0] = 'b';
+pp2 = new string(ch);//重新赋值
+```
+
+来重新设定指向栈
+
+其中`<string>.ToCharArray()`是将string转换为字符数组的方法
+
+`new string(char[])`能够将char数组转换为字符串
+
+> string字符串本质就是静动态类 (may?)
+
+
+
+如果需要整体重新修改通过`<string> = "<contact>";`即可
+
+
+
+## String Builder (SB)
