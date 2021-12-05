@@ -133,8 +133,19 @@ String Builder效率更高，并且没有去堆中新建空间，因此也更节
 
 String Builder并不能代替String，一般使用String Builder来处理需要多次重复赋值的字符串
 
-`using System.Text;`调用命名空间
+- `using System.Text;`调用命名空间
 
-`StringBuilder <name> = new StringBuilder();`新建对象
+- `StringBuilder <name> = new StringBuilder();`新建对象
 
-`<name>.ToString();`转换为String字符串
+- `<name>.ToString();`转换为String字符串
+
+
+
+
+
+# 字符串的方法
+
+- `<StringName>.Length` 获得字符串长度
+
+- `<StringName>.ToUpper()`  将字符串小写转大写
+- `<StringName>.ToLower()`  将字符串大写转小写
