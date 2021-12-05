@@ -149,3 +149,4 @@ String Builder并不能代替String，一般使用String Builder来处理需要�
 
 - `<StringName>.ToUpper()`  将字符串小写转大写
 - `<StringName>.ToLower()`  将字符串大写转小写
+- `<StringName>.Equals(string.value,type)` 对比字符串（Type控制需要对比的类型）

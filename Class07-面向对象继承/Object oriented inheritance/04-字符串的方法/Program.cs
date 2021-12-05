@@ -13,9 +13,18 @@ namespace _04_字符串的方法
             //nums.ToUpper
             value = value.ToUpper();
             Console.WriteLine(value);
-            //
+            //nums.ToLower
             value = value.ToLower();
             Console.WriteLine(value);
+            //nums.Equals
+            if (value.Equals("Djiwai",StringComparison.OrdinalIgnoreCase))
+            {
+                Console.WriteLine("1");
+            }
+            else
+            {
+                Console.WriteLine("0");
+            }
 
         }
     }
