@@ -146,7 +146,7 @@ String Builder并不能代替String，一般使用String Builder来处理需要�
 # 字符串的方法
 
 - `<StringName>.Length` 获得字符串长度
-
 - `<StringName>.ToUpper()`  将字符串小写转大写
 - `<StringName>.ToLower()`  将字符串大写转小写
 - `<StringName>.Equals(string.value,type)` 对比字符串（Type控制需要对比的类型）
+- `<StringName>.Spilt(char[],option)` 分割字符串（Option可以控制一些处理方法）
