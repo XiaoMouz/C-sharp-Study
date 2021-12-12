@@ -150,3 +150,6 @@ String Builder并不能代替String，一般使用String Builder来处理需要�
 - `<StringName>.ToLower()`  将字符串大写转小写
 - `<StringName>.Equals(string.value,type)` 对比字符串（Type控制需要对比的类型）
 - `<StringName>.Spilt(char[],option)` 分割字符串（Option可以控制一些处理方法）
+- `<StringName>.Contains(value/string)` 配对字符串，若在变量中遇到与`value/string`相同的内容便会返回bool类型true
+- `<StringName.Replace(value/string,value/string)` 替换字符串， 若在变量中发现传入参数1(`value/string`)与传入参数2(`value/string`)相同，则将变量中的参数1替换为参数2，并且将替换后的内容做返回值返回(因此需要使用字符串接收)
+- `<StringName>.Substring(int1(,int2))` 将字符串截取，将变量中从`int1`中开始截到最后一段，如果有`int2`传入，则截取到字符串在int2下标的位置

@@ -35,12 +35,25 @@ namespace _04_字符串的方法
 
 
             //练习：用户输入2008-01-16，将其显示为2008年1月16日
-            string date=Console.ReadLine();
+            //string date=Console.ReadLine();
+            string date = "2021-01-16";
             char[] del = { '-' };
             string[] sdata = date.Split(del, StringSplitOptions.RemoveEmptyEntries);
             Console.WriteLine("{0}年{1}月{2}日",sdata[0],sdata[1],sdata[2]);
 
-            //nums.replace 替换
+            //nums.contains/replace 配对与替换
+            string textChat = "国家主席";
+            if (textChat.Contains("主席")){
+                textChat = textChat.Replace("主席", "**");
+            }
+            Console.WriteLine(textChat);
+
+            //nums.substring 截取字符串
+            textChat = "你是个傻逼";
+            textChat = textChat.Substring(3);
+            Console.WriteLine(textChat);
+            textChat = textChat.Substring(0, 1);
+            Console.WriteLine(textChat);
         }
     }
 }
