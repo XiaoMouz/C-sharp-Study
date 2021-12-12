@@ -48,12 +48,36 @@ namespace _04_字符串的方法
             }
             Console.WriteLine(textChat);
 
-            //nums.substring 截取字符串
+            //nums.Substring 截取字符串
             textChat = "你是个傻逼";
             textChat = textChat.Substring(3);
             Console.WriteLine(textChat);
             textChat = textChat.Substring(0, 1);
             Console.WriteLine(textChat);
+
+            //nums.Startwith/nums.Endwith 字符串的开始/结束
+            string api = "api.version=v1";
+            if (api.StartsWith("api")){
+                Console.WriteLine("api Get");
+            }
+            else{
+                Console.WriteLine("not api");
+            }
+
+            if (api.EndsWith("v1"))
+            {
+                Console.WriteLine("api version is v1");
+            }
+            else{
+                Console.WriteLine("api version not is v1");
+            }
+
+            //int IndexOf(char/string) 找到字符串开始的下标[详细参考note]
+            int index = 0;
+            index = api.IndexOf("v1");
+            Console.WriteLine(index);
+
+            //int LastIndexOf(char/string)
         }
     }
 }
