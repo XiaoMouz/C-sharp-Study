@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Case", "Case\Case.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-字符串", "02-字符串\02-字符串.csproj", "{9B021D1D-0D6A-41E1-A98A-FFD5508E6107}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-String Builder(SB)", "03-String Builder(SB)\03-String Builder(SB).csproj", "{313D50A2-6498-4558-89FB-C7061F777CA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-String Builder(SB)", "03-String Builder(SB)\03-String Builder(SB).csproj", "{313D50A2-6498-4558-89FB-C7061F777CA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-字符串的方法", "04-字符串的方法\04-字符串的方法.csproj", "{3DA471D3-BE6D-4FAF-9B2E-264A04FB280B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-字符串的方法", "04-字符串的方法\04-字符串的方法.csproj", "{3DA471D3-BE6D-4FAF-9B2E-264A04FB280B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "练习", "练习\练习.csproj", "{1D964A68-5035-4E52-BFDA-8C12BEB9195D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3DA471D3-BE6D-4FAF-9B2E-264A04FB280B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DA471D3-BE6D-4FAF-9B2E-264A04FB280B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DA471D3-BE6D-4FAF-9B2E-264A04FB280B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D964A68-5035-4E52-BFDA-8C12BEB9195D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D964A68-5035-4E52-BFDA-8C12BEB9195D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D964A68-5035-4E52-BFDA-8C12BEB9195D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D964A68-5035-4E52-BFDA-8C12BEB9195D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
