@@ -72,12 +72,24 @@ namespace _04_字符串的方法
                 Console.WriteLine("api version not is v1");
             }
 
-            //int IndexOf(char/string) 找到字符串开始的下标[详细参考note]
+            //int IndexOf(char/string) 找到与字符串匹配字符(串)的首个字符的字符下标[详细参考note]
             int index = 0;
             index = api.IndexOf("v1");
             Console.WriteLine(index);
 
-            //int LastIndexOf(char/string)
+            //int LastIndexOf(char/string) 与上同理，但是是给出最后一个与搜索匹配的字符(串)下标
+            int index_last = 0;
+            string path = @"C:\user\admin\baidu\assets\css\main.css";
+            index_last = path.LastIndexOf(@"\");
+            path=path.Substring(index_last);
+            Console.WriteLine(path);
+
+            //nums.Join
+            string[] nums = { "1", "2", "3", "4", "5" };
+            //输出1|2|3|4|5
+            string nums_new=string.Join("|",nums);
+            Console.WriteLine(nums_new);
+
         }
     }
 }
