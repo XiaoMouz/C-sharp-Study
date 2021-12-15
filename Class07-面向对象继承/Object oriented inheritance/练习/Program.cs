@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace 练习
 {
@@ -6,7 +7,9 @@ namespace 练习
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string path = @"D:\64\BT\1.txt";
+            string contact = "";
+            File.ReadAllText(contact);
         }
     }
 }
