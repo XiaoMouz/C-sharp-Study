@@ -84,7 +84,7 @@ namespace _04_字符串的方法
             path=path.Substring(index_last);
             Console.WriteLine(path);
 
-            //nums.Join
+            //nums.Join NoteMarked
             string[] nums = { "1", "2", "3", "4", "5" };
             //输出1|2|3|4|5
             string nums_new=string.Join("|",nums);
