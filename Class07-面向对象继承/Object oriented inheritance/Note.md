@@ -164,4 +164,4 @@ String Builder并不能代替String，一般使用String Builder来处理需要�
 
 - `<StringName>.IsNullOrEmpty(char/string) ` 判断是否是空字符
 - `<StringName.Join()` 在字符串数组之间添加特定字符
-- 
+
