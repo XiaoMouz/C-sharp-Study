@@ -35,10 +35,10 @@ namespace 练习
             #endregion
 
             #region 从Email中提取出用户名与域名
-            //string email = "gxiaomouz@gmail.com";
-            //string username = email.Substring(0, email.IndexOf('@'));
-            //string domain = email.Substring((email.IndexOf('@')) + 1);
-            //Console.WriteLine("username={0},domain={1}", username, domain);
+            string email = "gxiaomouz@gmail.com";
+            string username = email.Substring(0, email.IndexOf('@'));
+            string domain = email.Substring((email.IndexOf('@')) + 1);
+            Console.WriteLine("username={0},domain={1}", username, domain);
             #endregion
 
             #region 
