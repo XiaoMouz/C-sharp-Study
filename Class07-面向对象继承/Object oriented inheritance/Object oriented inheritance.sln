@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-String Builder(SB)", "03
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-字符串的方法", "04-字符串的方法\04-字符串的方法.csproj", "{3DA471D3-BE6D-4FAF-9B2E-264A04FB280B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "练习", "练习\练习.csproj", "{1D964A68-5035-4E52-BFDA-8C12BEB9195D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "练习", "练习\练习.csproj", "{1D964A68-5035-4E52-BFDA-8C12BEB9195D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-继承", "05-继承\05-继承.csproj", "{5CDEEFBA-AFEA-4550-BDDE-E5C312D26578}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{1D964A68-5035-4E52-BFDA-8C12BEB9195D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D964A68-5035-4E52-BFDA-8C12BEB9195D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D964A68-5035-4E52-BFDA-8C12BEB9195D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CDEEFBA-AFEA-4550-BDDE-E5C312D26578}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDEEFBA-AFEA-4550-BDDE-E5C312D26578}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDEEFBA-AFEA-4550-BDDE-E5C312D26578}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDEEFBA-AFEA-4550-BDDE-E5C312D26578}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
