@@ -1,5 +1,5 @@
 ﻿using System;
-using _Ticket;
+using Case;
 
 namespace _01_命名空间
 {

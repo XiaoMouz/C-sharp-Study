@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _Ticket
+namespace Case
 {
     public class Ticket
     {
@@ -12,11 +12,11 @@ namespace _Ticket
         {
             if (distance < 0)
             {
-                this._distance = 0;
+                _distance = 0;
             }
             else
             {
-                this._distance = distance;
+                _distance = distance;
             }
 
         }
@@ -59,7 +59,7 @@ namespace _Ticket
 
         public void ShowTicket()
         {
-            Console.WriteLine("the {0}km,used {1}$", this.Distance, this.Price);
+            Console.WriteLine("the {0}km,used {1}$", Distance, Price);
         }
     }
 }
