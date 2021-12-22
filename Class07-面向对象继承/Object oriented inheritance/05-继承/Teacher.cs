@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05_继承
 {
-    internal class Teacher:Person
+    internal class Teacher:Person //继承Person
     {
         private double _salary;
         public double Salary{

@@ -169,12 +169,13 @@ String Builder并不能代替String，一般使用String Builder来处理需要�
 
 在类与类之间出现代码冗余时，可以使用继承将冗余代码进行单独封装
 
-在将重复的字段、方法封装后，利用以下方法来设定继承关系
+在将重复的成员封装后，利用以下方法来设定继承关系
 
-例:Person类包含了Teacher,Student,Driver三个类都重复的字段与关系，可以透过以下代码来让这三个类继承Person中的字段与方法
+例:Person类包含了Teacher,Student,Driver三个类都重复的成员，可以透过以下代码来让这三个类继承Person中的成员
 
 ```c#
 public class Teacher:Person
 //[public] class ClassName:FatherClassName <使用方法
+//此时，Teacher/Student/Driver 均是 Person的子类(派生类)，Person是他们的父类(基类)
 ```
 

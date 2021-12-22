@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05_继承
 {
-    internal class Student:Person
+    internal class Student:Person //继承Person
     {
         private int _id;
         public int Id{

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05_继承
 {
-    internal class Driver:Person
+    internal class Driver:Person //继承Person
     {
         private int _driverTime;
         public int DriverTime
