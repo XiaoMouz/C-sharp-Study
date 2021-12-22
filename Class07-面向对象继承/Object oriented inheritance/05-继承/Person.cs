@@ -8,6 +8,7 @@ namespace _05_继承
 {
     internal class Person
     {
+
         //使用此类作父类给各个职业类继承
         private string _name;
         public string Name
@@ -33,6 +34,17 @@ namespace _05_继承
         public void CH()
         {
             Console.WriteLine("CH");
+        }
+
+        public Person(string name,int age,char gender)
+        {
+            _name = name;
+            _age = age;
+            _gender = gender;
+        }
+        public Person()
+        {
+
         }
     }
 }

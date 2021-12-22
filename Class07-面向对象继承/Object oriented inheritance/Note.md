@@ -179,3 +179,34 @@ public class Teacher:Person
 //此时，Teacher/Student/Driver 均是 Person的子类(派生类)，Person是他们的父类(基类)
 ```
 
+子类会继承属性和方法，但是并不会继承父类的私有字段(或继承了但不可访问)
+
+## 继承的单根性与传递性
+
+单根性：一个子类只能有一个父类
+
+传递性：举例，以下代码为例解释
+
+```c#
+public class Teacher:Person{ 
+//此时Teacher完全继承了Person的Public级成员
+...
+}
+
+public class Driver:Teacher{ 
+//此时Driver不但完全继承了Teacher的Public级成员，还继承了Person的Public级成员
+...
+}
+```
+
+因此这个就是继承的传递性
+
+## 查看类图
+
+*额...不知道，2022没找到*
+
+## 父类的构造函数
+
+子类**不会继承**父类的构造函数
+
+但是当父类没有无参的构造函数时会导致错误
