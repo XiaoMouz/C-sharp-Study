@@ -47,7 +47,6 @@ namespace _04_字符串的方法
                 textChat = textChat.Replace("主席", "**");
             }
             Console.WriteLine(textChat);
-
             //nums.Substring 截取字符串
             textChat = "你是个傻逼";
             textChat = textChat.Substring(3);
