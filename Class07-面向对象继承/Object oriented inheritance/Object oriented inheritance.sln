@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-在new中隐藏父类成
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-里氏转换", "07-里氏转换\07-里氏转换.csproj", "{35E3F358-6016-4931-93F2-5D1C599E33C2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "里氏转换练习", "里氏转换练习\里氏转换练习.csproj", "{AA838D81-B564-4168-9B70-778A636343AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{35E3F358-6016-4931-93F2-5D1C599E33C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35E3F358-6016-4931-93F2-5D1C599E33C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35E3F358-6016-4931-93F2-5D1C599E33C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA838D81-B564-4168-9B70-778A636343AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA838D81-B564-4168-9B70-778A636343AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA838D81-B564-4168-9B70-778A636343AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA838D81-B564-4168-9B70-778A636343AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
