@@ -75,12 +75,14 @@ namespace 练习
             #endregion
 
             #region 将 a,b,c,d 变成 a|b|c|d
-            string[] names = { "a", "b", "c", "d" };
-            string str = string.Join('|', names);
-            string[] strNew = str.Split(new char[] {'|'},StringSplitOptions.RemoveEmptyEntries);
+            //string[] names = { "a", "b", "c", "d" };
+            //string str = string.Join('|', names);
+            //string[] strNew = str.Split(new char[] {'|'},StringSplitOptions.RemoveEmptyEntries);
 
-            Console.WriteLine(str);
+            //Console.WriteLine(str);
             #endregion
+
+
         }
     }
 }
