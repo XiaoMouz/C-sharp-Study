@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-字符串的方法", "04
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "练习", "练习\练习.csproj", "{1D964A68-5035-4E52-BFDA-8C12BEB9195D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05-继承", "05-继承\05-继承.csproj", "{5CDEEFBA-AFEA-4550-BDDE-E5C312D26578}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-继承", "05-继承\05-继承.csproj", "{5CDEEFBA-AFEA-4550-BDDE-E5C312D26578}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-在new中隐藏父类成员", "06-在new中隐藏父类成员\06-在new中隐藏父类成员.csproj", "{149B2B39-B3B1-4C79-9726-B3D966412755}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{5CDEEFBA-AFEA-4550-BDDE-E5C312D26578}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CDEEFBA-AFEA-4550-BDDE-E5C312D26578}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CDEEFBA-AFEA-4550-BDDE-E5C312D26578}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149B2B39-B3B1-4C79-9726-B3D966412755}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149B2B39-B3B1-4C79-9726-B3D966412755}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149B2B39-B3B1-4C79-9726-B3D966412755}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149B2B39-B3B1-4C79-9726-B3D966412755}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

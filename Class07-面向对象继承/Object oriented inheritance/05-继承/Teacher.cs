@@ -8,6 +8,11 @@ namespace _05_继承
 {
     internal class Teacher:Person //继承Person
     {
+        public Teacher(string name,int age,char gender,double salary) : base(name, age, gender)
+        {
+            this.Salary = salary;
+        }
+
         private double _salary;
         public double Salary{
             get { return _salary; }
@@ -15,7 +20,7 @@ namespace _05_继承
         }
 
         public void Sent(){
-            Console.WriteLine("G");
+            Console.WriteLine("已赋予工资{0}",Salary);
         }
     }
 }
