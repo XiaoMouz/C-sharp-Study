@@ -6,7 +6,8 @@ namespace _06_在new中隐藏父类成员
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Student s = new Student("131", 12, 'm', 1);
+            s.SayHello();//只有子类的sayhello
         }
     }
 }

@@ -4,22 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _05_继承
+namespace _06_在new中隐藏父类成员
 {
-    internal class Student:Person //继承Person
+    internal class Student : Person //继承Person
     {
-        public Student(string name,int age,char gender,int id) : base(name, age, gender)
+        public Student(string name, int age, char gender, int id) : base(name, age, gender)
         {
-            this.Id = id;
+            Id = id;
         }
         private int _id;
-        public int Id{
+        public int Id
+        {
             get { return _id; }
             set { _id = value; }
         }
 
-        public void Get(){
-            Console.WriteLine(this.Id);
+        public void Get()
+        {
+            Console.WriteLine(Id);
+        }
+
+        public void SayHello()
+        {
+
         }
     }
 }

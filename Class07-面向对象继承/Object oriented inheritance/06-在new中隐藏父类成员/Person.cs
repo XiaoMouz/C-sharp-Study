@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _05_继承
+namespace _06_在new中隐藏父类成员
 {
     internal class Person
     {
@@ -36,7 +36,12 @@ namespace _05_继承
             Console.WriteLine("CH");
         }
 
-        public Person(string name,int age,char gender)
+        public void SayHello()
+        {
+            Console.WriteLine("{0}是{1}岁的{3}生", Name, Age, Gender);
+        }
+
+        public Person(string name, int age, char gender)
         {
             _name = name;
             _age = age;
