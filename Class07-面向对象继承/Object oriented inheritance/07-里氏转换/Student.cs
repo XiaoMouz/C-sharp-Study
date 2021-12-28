@@ -24,9 +24,9 @@ namespace _07_里氏转换
             Console.WriteLine(Id);
         }
 
-        public void SayHello()
+        public void StudentSayHello()
         {
-
+            Console.WriteLine("{0}是学生", this.Name);
         }
     }
 }
