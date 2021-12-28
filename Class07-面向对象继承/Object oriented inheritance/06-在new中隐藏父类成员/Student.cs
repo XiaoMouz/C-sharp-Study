@@ -24,7 +24,7 @@ namespace _06_在new中隐藏父类成员
             Console.WriteLine(Id);
         }
 
-        public void SayHello()
+        new public void SayHello()
         {
 
         }
