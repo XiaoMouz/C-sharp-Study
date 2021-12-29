@@ -6,6 +6,7 @@ namespace 里氏转换练习
     {
         static void Main(string[] args)
         {
+            Person p = new Person();
             
         }
     }
