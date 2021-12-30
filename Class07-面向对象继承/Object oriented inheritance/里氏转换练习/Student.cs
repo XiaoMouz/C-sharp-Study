@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace 里氏转换练习
 {
-    internal class Student
+    internal class Student:Person
     {
         public void StudentSayHello()
         {
