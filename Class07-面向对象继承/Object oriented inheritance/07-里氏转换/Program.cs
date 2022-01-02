@@ -28,7 +28,6 @@ namespace _07_里氏转换
 
             //as
             Teacher t = p as Teacher;//由于失败，因此t的值为none
- 
         }
     }
 }
