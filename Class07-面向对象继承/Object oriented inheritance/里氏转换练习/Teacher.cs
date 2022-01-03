@@ -11,7 +11,6 @@ namespace 里氏转换练习
         public void TeacherSayHello()
         {
             Console.WriteLine("I'm a Teacher");
-            //ji
         }
     }
 }

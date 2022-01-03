@@ -306,4 +306,7 @@ Teacher t = p as Teacher;
 //t的内容必定为none，因为无法转换
 ```
 
-- 
+ 
+
+## Person
+

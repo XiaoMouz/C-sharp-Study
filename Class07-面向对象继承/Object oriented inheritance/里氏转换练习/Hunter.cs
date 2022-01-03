@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace 里氏转换练习
 {
-    internal class Person
+    internal class Hunter:Person
     {
-        public void SayHello()
+        public void HunterSayHello()
         {
-            Console.WriteLine("I'm a Person");
+            Console.WriteLine("Hunter Hunter Hunter");
         }
     }
 }
