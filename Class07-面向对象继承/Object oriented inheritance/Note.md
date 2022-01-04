@@ -322,3 +322,188 @@ Teacher t = p as Teacher;
 - `internal`:可以让同一命名空间的类访问赋值
 - `protected`:可以让该类与该类的子类访问与赋值
 - `private`:只能通过`get`与`set`来访问与赋值
+
+
+
+# Array List
+
+创建一个arraylist对象（集合对象）:
+
+```C#
+using System;
+using System.Collections;
+
+namespace _ArrayList
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList first = new ArrayList();
+        }
+    }
+}
+```
+
+
+
+## 什么是ArrayList
+
+- Array List类似一个数组，但是在很多方面上比数组更为优越
+
+### ArrayList的好处
+
+1. ArrayList是很多数据的集合 - 也就是集合
+2. 相比起数组能够随意更变长度
+3. 能够存储多种类型的数组（类型不固定）
+
+
+
+## 对ArrayList的数据操作
+
+### ArrayList 数据添加
+
+如下代码，随意添加数据:
+
+```C#
+first.Add("jwdioaiaw");
+first.Add(3131);
+first.Add(true);
+```
+
+### ArrayList 数据读取
+
+通过如下代码可以调用`first`集合中的数据:
+
+```c#
+for (int i = 0; i < first.Count; i++)
+{
+	Console.WriteLine(first[i]);
+}
+```
+
+
+
+### ArrayList添加数组与对象
+
+通过如下代码加入数组（与普通加入方式无差别）:
+
+```c#
+first.Add(new int[] { 1,2,3,4,5});
+Person p = new Person();
+first.Add(p);
+first.Add(first);
+```
+
+但是读取时，结果变成了如下内容:
+
+```cmd
+System.Int32[]
+_09_ArrayList.Person
+System.Collections.ArrayList
+```
+
+
+
+因此需要使用`AddRange`方法来添加为妙:
+
+```c#
+first.AddRange(new int[] { 12312, 1212, 342342, 121 });
+for (int i = 0; i < first.Count; i++)
+{
+		Console.WriteLine(first[i]);
+}
+```
+
+
+
+### ArrayList数据删除与清空
+
+通过以下代码删除单一元素
+
+```c#
+first.Remove(true);
+```
+
+此时true元素即被删除，填写谁就会删除谁
+
+
+
+若要指定下标删除则使用以下代码
+
+```c#
+first.RemoveAT(0);
+```
+
+此时下标的元素被删除
+
+
+
+若要删除某一范围的元素则使用以下代码
+
+```c#
+first.RemoveRange(0,3);
+```
+
+此时下标0-3之间的所有的元素被删除
+
+
+
+若要清空元素则使用
+
+```c#
+first.Clear();
+```
+
+即可
+
+
+
+## 关于Console.WriteLine()
+
+在通常情况下，将一个对象打印到控制台，通常情况下打印的会是这个对象所在类的命名空间
+
+## 如何让Console.WriteLine()打出自己所需的内容
+
+1. 首先判断ArrayList中的数据是否是对象
+2. 若是则将其转换为所需对象，然后执行相关方法
+
+```c#
+for (int i = 0; i < first.Count; i++)
+{
+	if(first[i] is Person)
+		{
+			((Person)first[i]).Say();
+        }
+    else if(first[i] is int[])
+        	{
+            	for (int j = 0; j < ((int[])first[i]).Length; j++)
+                    {
+                        Console.WriteLine(((int[])first[j]));
+                    }
+                }
+	else
+        	{
+            	Console.WriteLine(first[i]);
+           	}
+	//Console.WriteLine(first[i]);
+}
+```
+
+
+
+## 前面对数组的处理太sb了
+
+在添加数组与集合时，建议使用`<ArrayList>.AddRange`方法，使用这个方法便能更加方便的调用这种数据
+
+演示代码:
+
+```c#
+first.AddRange(new int[] { 12312, 1212, 342342, 121 });
+for (int i = 0; i < first.Count; i++)
+{
+		Console.WriteLine(first[i]);
+}
+```
+
+控制台即可输出int数组内的数据
