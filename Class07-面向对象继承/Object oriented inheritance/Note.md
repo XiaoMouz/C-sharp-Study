@@ -308,3 +308,17 @@ Teacher t = p as Teacher;
 
 
 
+# protected关键字
+
+- protect - 受保护的
+
+`protected`关键字权限的成员，可以让本类和子类访问此成员
+
+
+
+## 权限关键字
+
+- `public`:在调用得当的情况下，整个解决方案都可以访问赋值
+- `internal`:可以让同一命名空间的类访问赋值
+- `protected`:可以让该类与该类的子类访问与赋值
+- `private`:只能通过`get`与`set`来访问与赋值
