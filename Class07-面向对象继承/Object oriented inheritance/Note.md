@@ -531,3 +531,8 @@ for (int i = 0; i < first.Count; i++)
 ```
 
 控制台即可输出int数组内的数据
+
+
+
+## ArrayList 长度
+
