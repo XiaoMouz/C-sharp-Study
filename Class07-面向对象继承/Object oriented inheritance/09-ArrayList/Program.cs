@@ -54,6 +54,12 @@ namespace _09_ArrayList
             first.RemoveRange(0, 2);
             //清空所有元素
             first.Clear();
+
+            //first.Sort(); & first.Reverse(); 对应 升序排列 & 反转
+
+            first.Insert(0, 1);//在下标0之前插入int 1
+            first.InsertRange(1, new string[] { "121", "dawjiod" }); //在下标1之前插入一个数组
+            first.Contains(1);//判断集合是否包含某一元素
         }
     }
 

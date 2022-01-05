@@ -384,7 +384,7 @@ for (int i = 0; i < first.Count; i++)
 
 
 
-### ArrayList添加数组与对象
+### ArrayList 添加数组与对象
 
 通过如下代码加入数组（与普通加入方式无差别）:
 
@@ -417,7 +417,7 @@ for (int i = 0; i < first.Count; i++)
 
 
 
-### ArrayList数据删除与清空
+### ArrayList 数据删除与清空
 
 通过以下代码删除单一元素
 
@@ -456,6 +456,30 @@ first.Clear();
 ```
 
 即可
+
+### ArrayList 数据插入
+
+若要插入一个数据，使用`Insert`方法，例子:
+
+```c#
+first.Insert(1,102);
+```
+
+若要插入的是集合或数组，则使用`InsertRange`方法，例子:
+
+```c#
+first.InsertRange(1, new string[] { "121", "dawjiod" });
+```
+
+
+
+### ArrayList  数据查询
+
+使用`Contains`方法，查询是否包含指定元素，返回bool值，例子:
+
+```c#
+first.Contains(1);
+```
 
 
 
