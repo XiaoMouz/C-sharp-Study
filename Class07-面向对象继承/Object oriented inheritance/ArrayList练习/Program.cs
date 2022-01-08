@@ -13,10 +13,9 @@ namespace ArrayList练习
             Random rNum = new Random();
             int temp = 0;
             int sum=0;
-            for (int i = 0; i < numList.Count; i++)
+            for (int i = 0; i < 10; i++)
             {
-                temp = 0;
-                temp = rNum.Next();
+                temp = rNum.Next(0,13456789);
                 if (numList.Contains(temp))
                 {
                     i--;
