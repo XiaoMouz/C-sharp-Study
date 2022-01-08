@@ -475,7 +475,7 @@ first.InsertRange(1, new string[] { "121", "dawjiod" });
 
 ### ArrayList  数据查询
 
-使用`Contains`方法，查询是否包含指定元素，返回bool值，例子:
+使用`Contains`方法，查询是否包含指定元素，返回bool值(符合返回true不符合返回false)，例子:
 
 ```c#
 first.Contains(1);
