@@ -325,7 +325,7 @@ Teacher t = p as Teacher;
 
 
 
-# Array List
+# ArrayList
 
 创建一个arraylist对象（集合对象）:
 
@@ -550,4 +550,8 @@ eg:
 | 1     | 4        |
 | 5     | 8        |
 | 9     | 16       |
+
+
+
+# HashTable( 键值对集合 / 字典 )
 

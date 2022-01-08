@@ -31,6 +31,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-ArrayList集合长度", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayList练习", "ArrayList练习\ArrayList练习.csproj", "{6C84C167-87BA-48F7-A3C1-F16762186558}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-HashTable", "11-HashTable\11-HashTable.csproj", "{4CA720CC-829B-479E-A086-4F1CFA61AA60}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{6C84C167-87BA-48F7-A3C1-F16762186558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C84C167-87BA-48F7-A3C1-F16762186558}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C84C167-87BA-48F7-A3C1-F16762186558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CA720CC-829B-479E-A086-4F1CFA61AA60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA720CC-829B-479E-A086-4F1CFA61AA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA720CC-829B-479E-A086-4F1CFA61AA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA720CC-829B-479E-A086-4F1CFA61AA60}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
