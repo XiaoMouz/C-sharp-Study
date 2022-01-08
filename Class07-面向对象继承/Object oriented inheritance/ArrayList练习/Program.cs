@@ -12,11 +12,28 @@ namespace ArrayList练习
 
             Random rNum = new Random();
             int temp = 0;
+            int sum=0;
             for (int i = 0; i < numList.Count; i++)
             {
                 temp = 0;
                 temp = rNum.Next();
+                if (numList.Contains(temp))
+                {
+                    i--;
+                    continue;
+                }
+                else
+                {
+                    numList.Add(temp);
+                }
             }
+
+            for (int i = 0; i < numList.Count; i++)
+            {
+                sum+=(int)numList[i];
+            }
+            Console.WriteLine(sum);
+            Console.WriteLine(sum/numList.Count);
         }
     }
 }
