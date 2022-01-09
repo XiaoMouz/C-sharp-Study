@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 
 namespace _11_HashTable
 {
@@ -6,7 +7,7 @@ namespace _11_HashTable
     {
         static void Main(string[] args)
         {
-            
+            Hashtable a = new Hashtable();
         }
     }
 }
