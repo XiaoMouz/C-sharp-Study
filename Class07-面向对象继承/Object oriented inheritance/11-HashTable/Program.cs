@@ -8,6 +8,9 @@ namespace _11_HashTable
         static void Main(string[] args)
         {
             Hashtable a = new Hashtable();
+            a.Add("a", 1);
+            a.Remove("a");
+            a.Clear();
         }
     }
 }
