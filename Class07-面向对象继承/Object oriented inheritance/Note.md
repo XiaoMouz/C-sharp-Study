@@ -553,5 +553,27 @@ eg:
 
 
 
-# HashTable( 键值对集合 / 字典 )
-什么是Hash Table？
+# Hashtable( 键值对集合 / 字典 )
+
+在键值对集合中，是通过键来找到值的
+
+因此如果要遍历键值对集合，需要使用`foreach`循环
+
+
+
+## foreach
+
+示例:
+
+```c#
+foreach (var item in collection)
+	{
+		
+	}
+```
+
+foreach循环中
+
+- `var`指的是(Hashtable)集合的元素
+- `item`是集合中的每一项
+- `collection`指的是集合
