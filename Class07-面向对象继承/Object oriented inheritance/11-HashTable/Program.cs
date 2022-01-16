@@ -8,10 +8,9 @@ namespace _11_HashTable
         static void Main(string[] args)
         {
             Hashtable a = new Hashtable();
+            //键值对集合
             a.Add("a", 1);
             a.Remove("a");
-            a.Clear();
-            //键值对集合
             a.Add(1, true);
             a.Add(2, false);
             a.Add(3, "jwajiod");
