@@ -8,6 +8,9 @@ namespace _11_HashTable
         static void Main(string[] args)
         {
             Hashtable a = new Hashtable();
+            a.Add("a", 1);
+            a.Remove("a");
+            a.Clear();
             //键值对集合
             a.Add(1, true);
             a.Add(2, false);
@@ -30,6 +33,7 @@ namespace _11_HashTable
             //关于var
             //var能通过值来赋予类型，不需要对变量有一个明确的定义
 
+           
         }
     }
 }
