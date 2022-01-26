@@ -18,11 +18,6 @@ namespace _11_HashTable
             a.Add(5, 999);
             a.Add('b', "error");
 
-            foreach (var item in collection)
-            {
-
-            }
-
             //for (int i = 0; i < a.Count; i++)
             //{
             //    Console.WriteLine(a[i]);
