@@ -331,11 +331,11 @@ Teacher t = p as Teacher;
 
 ```C#
 using System;
-using System.Collections;
+using System.Collections;//使用他们所在的命名空间
 
-namespace _ArrayList
+namespace _ArraylistExample
 {
-    internal class Program
+    internal class CreateArraylist
     {
         static void Main(string[] args)
         {
@@ -360,6 +360,8 @@ namespace _ArrayList
 
 
 ## 对ArrayList的数据操作
+
+假设已创建对象并且对象中有初值
 
 ### ArrayList 数据添加
 
@@ -557,7 +559,65 @@ eg:
 
 在键值对集合中，是通过键来找到值的
 
-因此如果要遍历键值对集合，需要使用`foreach`循环
+因此如果要遍历键值对集合，需要使用[`foreach`](#foreach)循环
+
+```c#
+using System;
+using System.Collections;//使用他们所在的命名空间
+
+namespace _HashtableExample
+{
+    internal class CreateHashtable
+    {
+        static void Main(string[] args)
+        {
+            Hashtable a = new Hashtable();
+        }
+    }
+}
+```
+
+**键必须唯一，值可以随意**
+
+## 对Hashtable的数据操作
+
+### 关于添加、删除等操作
+
+大部分操作和ArrayList的函数差不多，可以自行尝试
+
+例如`Remove()`移除指定Key以及Value,`Clear()` 清空,`Add()` 添加
+
+普通的赋值方法也能工作
+
+```c#
+a[1]="1212";
+```
+
+此时，如果该键已经有值则会被重新赋值，如果没有值则会新建一个键来存
+
+### 获取Hashtable的键
+
+通过`Kesy()`函数来获得Hashtable的键
+
+```c#
+a.Keys();
+```
+
+### 获取Hashtable的值
+
+通过`Values()`函数来获得Hashtable的值
+
+```c#
+a.Values();
+```
+
+### Hashtable数据查询
+
+查看表内是否包含某个键、值
+
+- `Contains()` 查询是否包含某个键
+- `ContainsKey()` 查询是否包含某个键(与`Contains()`一样)
+- `ContainsValue()` 查询是否包含某个值
 
 
 
@@ -577,3 +637,12 @@ foreach循环中
 - `var`指的是(Hashtable)集合的元素
 - `item`是集合中的每一项
 - `collection`指的是集合
+
+### 关于foreach循环和for循环的效率
+
+在实际工作中，如果遇到循环次数较大时，for的循环的效率远高于foreach循环，因此在能够使用for循环的情况下尽量使用for循环，在遇到较大数时尽量转成for循环可读的状态下运行
+
+## var
+
+`var`能通过值来推断并赋予类型，不需要对变量有一个明确的定义，但是**必须初始化变量(赋予初值)**
+
