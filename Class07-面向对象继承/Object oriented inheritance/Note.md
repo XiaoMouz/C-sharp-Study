@@ -646,3 +646,195 @@ foreach循环中
 
 `var`能通过值来推断并赋予类型，不需要对变量有一个明确的定义，但是**必须初始化变量(赋予初值)**
 
+
+
+# Path类
+
+使用Path类需要调用命名空间`System.IO`，他们是静态类
+
+## Path类的各种方法
+
+方法均返回string类型数据
+
+### 获取已知路径的文件名
+
+通过`Path.GetFileName()`来获得文件名(带后缀)，与`Path.GetFileNameWithoutExtension()`来获得不带后缀的文件名
+
+eg:
+
+```c#
+using System;
+using System.IO;//Path类所需
+
+namespace _PathExample
+{
+    internal class Path
+    {
+        static void Main(string[] args)
+        {
+            String filePath = @"D:\64\S1.txt";//一个路径
+            Console.WriteLine(Path.GetFileName(filePath));//获得文件名称并打印
+            Console.WriteLine(Path.GetFileNameWithoutExtension(filePath));//获得文件名称(不包含后缀)并打印
+        }
+    }
+}
+
+```
+
+
+
+### 获取已知路径文件的后缀
+
+使用`Path.GetExtension()`方法来获得文件后缀以验证文件是否是所需类型文件
+
+eg:
+
+```c#
+using System;
+using System.IO;//Path类所需
+
+namespace _PathExample
+{
+    internal class Path
+    {
+        static void Main(string[] args)
+        {
+            String filePath = @"D:\64\S1.txt";
+            Console.WriteLine(Path.GetExtension(filePath));
+        }
+    }
+}
+
+```
+
+### 获取已知路径文件的路径信息
+
+使用`Path.GetDirectoryName()`方法来获取文件所在路径
+
+eg:
+
+```c#
+using System;
+using System.IO;//Path类所需
+
+namespace _PathExample
+{
+    internal class Path
+    {
+        static void Main(string[] args)
+        {
+            String filePath = @"D:\64\S1.txt";
+            Console.WriteLine(Path.GetDirectoryName(filePath));
+        }
+    }
+}
+```
+
+### 获取已知路径文件的完整路径信息
+
+使用`Path.GetFullPath()`方法来获取文件完整路径信息
+
+eg:
+
+```c#
+using System;
+using System.IO;//Path类所需
+
+namespace _PathExample
+{
+    internal class Path
+    {
+        static void Main(string[] args)
+        {
+            String filePath = @"D:\64\S1.txt";
+            Console.WriteLine(Path.GetFullPath(filePath));
+        }
+    }
+}
+```
+
+### 将路径拼合
+
+使用`Path.Combine(string,string)`将两个路径拼合为一个路径
+
+# File 类
+
+使用File类方法(函数)需要使用`using System.IO`，他们也是静态类
+
+## File类的各种方法
+
+### 创建文件
+
+使用`File.Create(string)`来创建文件，其中需要指定文件名称，但是不需要指定文件路径
+
+如果指定文件路径务必指定完整路径，若直接输入文件名将默认在程序当前目录下创建新文件，指定相对路径会抛异常
+
+### 删除文件
+
+使用`File.Delete(string)`来删除文件，其中需要指定文件完整路径，但是不需要指定文件，若不指定文件则删除文件夹
+
+如果指定文件务必指定完整路径与文件名，若直接输入文件路径将会删除整个路径下文件，指定相对路径与文件名会抛异常
+
+### 读取文件
+
+#### File.ReadAllBytes
+
+通过`File.ReadAllBytes(string(file path),Encoding)`来将文件内容转换为特定的编码格式
+
+通过string来设置路径，Encoding来选择读取文件所使用的编码格式
+
+使用`byte[]`数组接收
+
+
+
+#### File.ReadAllLines
+
+通过`File.ReadAllLines(string(file path),Encoding)`来将文件转换为string格式
+
+通过设置path来选择路径，Encoding来选择读取使用的编码格式
+
+使用`string[]`数组接收，一行对应一个string元素，并且将其存入数组
+
+
+
+#### File.ReadAllText
+
+通过`File.ReadAllText(string(file path),Encoding)`来将文件转换为string内容
+
+通过设置path来选择路径，Encoding来选择读取使用的编码格式
+
+读取后会转换为字符串，需要使用`string`来接收
+
+
+
+### 写入文件
+
+
+
+#### File.WriteAllBytes
+
+通过`File.WriteAllBytes(string(file path),byte[])`来将byte[]内的内容写入到文件中
+
+通过path来选择文件路径，byte[]来选择写入文件的内容
+
+
+
+#### File.WriteAllLines
+
+通过`File.WriteAllLines(string(file path),Encoding)`来将string[]内的内容写入到文件中
+
+通过path来选择文件路径，string[]来选择写入文件的内容
+
+每一个元素会写入一行
+
+
+
+#### File.WriteAllText
+
+通过`File.WriteAllText(string(file path),Encoding)`来将string内的内容写入到文件中
+
+通过path来选择文件路径，string来选择写入文件的内容
+
+# 编码
+
+将字符串以特定的形式保存为二进制，所规范的格式

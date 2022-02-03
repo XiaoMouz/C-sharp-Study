@@ -29,9 +29,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "09-ArrayList", "09-ArrayLis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10-ArrayList集合长度", "10-ArrayList集合长度\10-ArrayList集合长度.csproj", "{A5538333-8BD1-490E-B55F-E7E7F2DFC852}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayList练习", "ArrayList练习\ArrayList练习.csproj", "{6C84C167-87BA-48F7-A3C1-F16762186558}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayList练习", "ArrayList练习\ArrayList练习.csproj", "{6C84C167-87BA-48F7-A3C1-F16762186558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-HashTable", "11-HashTable\11-HashTable.csproj", "{4CA720CC-829B-479E-A086-4F1CFA61AA60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-HashTable", "11-HashTable\11-HashTable.csproj", "{4CA720CC-829B-479E-A086-4F1CFA61AA60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-Path_Class", "12-Path_Class\12-Path_Class.csproj", "{1A0969D8-21AC-42B3-9191-DF891C1DE8E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-File_Class", "13-File_Class\13-File_Class.csproj", "{FF7FAC57-3DFA-4230-8C29-CEE4E1F08E75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +103,14 @@ Global
 		{4CA720CC-829B-479E-A086-4F1CFA61AA60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CA720CC-829B-479E-A086-4F1CFA61AA60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CA720CC-829B-479E-A086-4F1CFA61AA60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A0969D8-21AC-42B3-9191-DF891C1DE8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A0969D8-21AC-42B3-9191-DF891C1DE8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A0969D8-21AC-42B3-9191-DF891C1DE8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A0969D8-21AC-42B3-9191-DF891C1DE8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7FAC57-3DFA-4230-8C29-CEE4E1F08E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7FAC57-3DFA-4230-8C29-CEE4E1F08E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7FAC57-3DFA-4230-8C29-CEE4E1F08E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7FAC57-3DFA-4230-8C29-CEE4E1F08E75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
