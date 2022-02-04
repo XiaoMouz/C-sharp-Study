@@ -932,7 +932,7 @@ List<type> name = new List<type>();
 
 #### List转数组
 
-使用`ToArray();`方法，将List数组转换为对应元素的数组
+使用`ToArray();`方法，将List数组转换为**对应**元素的数组
 
 ```c#
 using System;
@@ -986,6 +986,3 @@ namespace _ListExample
     }
 }
 ```
-
-
-
