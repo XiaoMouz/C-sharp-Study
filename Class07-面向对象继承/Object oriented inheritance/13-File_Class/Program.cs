@@ -39,6 +39,8 @@ namespace _13_File_Class
 
             string s1 = File.ReadAllText(@"D:\64\C1.txt", Encoding.Default);
             Console.WriteLine(s1);
+
+            File.AppendAllText(@"D:\64\C1.txt", "我滴任务完成辣");
         }
     }
 }

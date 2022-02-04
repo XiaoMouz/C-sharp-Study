@@ -775,6 +775,10 @@ namespace _PathExample
 
 如果指定文件务必指定完整路径与文件名，若直接输入文件路径将会删除整个路径下文件，指定相对路径与文件名会抛异常
 
+### 移动文件
+
+使用`File.Move(string,string)`来移动文件，需要指定文件完整路径
+
 ### 读取文件
 
 #### File.ReadAllBytes
@@ -809,7 +813,7 @@ namespace _PathExample
 
 ### 写入文件
 
-
+这些写入方式都会覆盖原本的文件
 
 #### File.WriteAllBytes
 
@@ -834,6 +838,24 @@ namespace _PathExample
 通过`File.WriteAllText(string(file path),Encoding)`来将string内的内容写入到文件中
 
 通过path来选择文件路径，string来选择写入文件的内容
+
+
+
+#### File.AppendAllLines/File.AppendAllText
+
+用于追加内容
+
+
+
+### 补充
+
+- `File.Copy("source","targetFileName",[true]);`:文件拷贝，如果有true则代表文件存在时进行覆盖，如果不加true则遇到重名文件抛异常
+
+- `File.Exist();`:用于判断文件是否存在
+
+- `File.Move("source","target")`:用于移动、剪切文件，同时也可以用于重命名
+
+  
 
 # 编码
 
