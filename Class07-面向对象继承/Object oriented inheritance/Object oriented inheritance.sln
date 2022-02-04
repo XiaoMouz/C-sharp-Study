@@ -33,9 +33,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArrayList练习", "ArrayLis
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11-HashTable", "11-HashTable\11-HashTable.csproj", "{4CA720CC-829B-479E-A086-4F1CFA61AA60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-Path_Class", "12-Path_Class\12-Path_Class.csproj", "{1A0969D8-21AC-42B3-9191-DF891C1DE8E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12-Path_Class", "12-Path_Class\12-Path_Class.csproj", "{1A0969D8-21AC-42B3-9191-DF891C1DE8E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13-File_Class", "13-File_Class\13-File_Class.csproj", "{FF7FAC57-3DFA-4230-8C29-CEE4E1F08E75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13-File_Class", "13-File_Class\13-File_Class.csproj", "{FF7FAC57-3DFA-4230-8C29-CEE4E1F08E75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14-List集合", "14-List集合\14-List集合.csproj", "{D2F75697-2601-4138-BCBC-5090BA00B86F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{FF7FAC57-3DFA-4230-8C29-CEE4E1F08E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF7FAC57-3DFA-4230-8C29-CEE4E1F08E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF7FAC57-3DFA-4230-8C29-CEE4E1F08E75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F75697-2601-4138-BCBC-5090BA00B86F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F75697-2601-4138-BCBC-5090BA00B86F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F75697-2601-4138-BCBC-5090BA00B86F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F75697-2601-4138-BCBC-5090BA00B86F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

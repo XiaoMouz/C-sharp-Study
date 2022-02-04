@@ -860,3 +860,132 @@ namespace _PathExample
 # 编码
 
 将字符串以特定的形式保存为二进制，所规范的格式
+
+
+
+# List 泛型集合
+
+在ArrayList中已经了解了一个好处，可以随意存储各种类型的数据
+
+但是这些数据在拿出时都会统一变成Object类型，若要使用还需要转成对应类型的数据
+
+因此我们还有另一个集合，List集合
+
+List集合中，已经确定了其中包含了的元素类型，在确定泛型集合的类型后，里面的元素类型也确定了
+
+## 调用与创建
+
+List泛型集合在`System.Collections.Generic`中，需要使用
+
+```c#
+using System.Collections.Generic;
+```
+
+来调用
+
+
+
+通过以下代码来创建一个对象
+
+```c#
+using System;
+using System.Collections.Generic;
+
+namespace _ListExample
+{
+    internal class Example
+    {
+        static void Main(string[] args)
+        {
+            //创建泛型集合对象
+            List<int> aw = new List<int>();
+        }
+    }
+}
+
+```
+
+其中
+
+```c#
+List<type> name = new List<type>();
+```
+
+- `type`是指定List类型
+- `name`用于对象命名
+
+
+
+## 对List的数据操作
+
+### 添加、删除、长度
+
+与ArrayList一致，可以直接使用，但是有几个特殊的
+
+### 根据条件来删除元素
+
+使用`RemoveAll();`方法，在其中填入委托条件即可删除对应的元素
+
+### 数据转换
+
+一个对应的数组可以转换成List对象，当然一个List对象也能转换为一个对应的数组
+
+#### List转数组
+
+使用`ToArray();`方法，将List数组转换为对应元素的数组
+
+```c#
+using System;
+using System.Collections.Generic;
+
+namespace _ListExample
+{
+    internal class Example
+    {
+        static void Main(string[] args)
+        {
+            List<int> aw = new List<int>();//创建泛型集合对象 规定类型为int
+            aw.Add(1);//添加一个元素
+            int[] nums = aw.ToArray();//将List转为int数组
+        }
+    }
+}
+
+```
+
+#### 数组转List
+
+此方法需要使用`System.Linq;`才能调用相关方法，加入以下代码
+
+```c#
+using System.Linq;
+```
+
+使用`ToList()`方法，可以在新建对象时使用`ToList();`方法来直接转换成List对象
+
+也可以直接将数组添加到某一对象中
+
+```c#
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace _ListExample
+{
+    internal class Example
+    {
+        static void Main(string[] args)
+        {
+            //创建泛型集合对象
+            List<int> aw = new List<int>();
+            aw.Add(1);
+            int[] nums = aw.ToArray();//转数组
+            List<int> bw = nums.ToList();//新建对象来存储数组
+            aw.AddRange(nums);//直接添加至List对象
+        }
+    }
+}
+```
+
+
+
