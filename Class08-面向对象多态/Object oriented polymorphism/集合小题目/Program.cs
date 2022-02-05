@@ -33,6 +33,7 @@ namespace 集合小题目
                     odd.Add(nums[i]);
                 }
             }
+            //将两个集合添加到总集合中
             for (int i = 0; i < nums.Length; i++)
             {
                 if ((i + 1) % 2 == 0)
@@ -51,6 +52,7 @@ namespace 集合小题目
                     sys++;
                 }
             }
+            //打印
             for (int i = 0; i < nums.Length; i++)
             {
                 Console.WriteLine("{0}---{1}", sum[i], sum[++i]);
