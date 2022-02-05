@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01-装箱与拆箱", "01-�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-Dictionary字典", "02-Dictionary字典\02-Dictionary字典.csproj", "{F7D2EE3D-8EC6-437C-8E40-36F9D91BBA8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "集合小题目", "集合小题目\集合小题目.csproj", "{3752EBC6-7F19-406D-877E-8120F238A559}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F7D2EE3D-8EC6-437C-8E40-36F9D91BBA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7D2EE3D-8EC6-437C-8E40-36F9D91BBA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7D2EE3D-8EC6-437C-8E40-36F9D91BBA8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3752EBC6-7F19-406D-877E-8120F238A559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3752EBC6-7F19-406D-877E-8120F238A559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3752EBC6-7F19-406D-877E-8120F238A559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3752EBC6-7F19-406D-877E-8120F238A559}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
