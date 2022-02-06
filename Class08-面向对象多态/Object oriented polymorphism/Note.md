@@ -122,3 +122,117 @@ namespace _DictionaryExample
 }
 ```
 
+
+
+# FileStream文件流
+
+前面使用File类对文件进行操作都是一次性的，对内存会造成较大负荷，因此需要使用FileStream来进行这些操作
+
+
+
+## 概念/区别
+
+FileStream需要搭配StreamReader&StreamWriter使用
+
+- FileStream用于操作字节
+- StreamReader&StreamWriter用于操作字符
+
+### File与FileStream的区别
+
+以两个水缸举例，一个水缸的水要倒到另一个水缸，有两种方法(固定思维):
+
+- 一勺一勺的挖，不费力但是需要长时间——FileStream
+- 直接扛起来倒入另一个水缸——File
+
+ 
+
+## 上手
+
+创建FileStream需要调用`System.IO`
+
+### 创建对象(FileStream)
+
+通过以下代码来创建一个实例对象
+
+```c#
+using System;
+using System.IO;//调用需要的命名空间
+using System.Text;
+
+namespace _FileStreamExample
+{
+    internal class Example
+    {
+        static void Main(string[] args)
+        {
+            FileStream FSRead = 
+            new FileStream(@"D:\64\FileStreamExample_01.txt",FileMode.OpenOrCreate,FileAccess.ReadWrite);
+            //设置访问路径，选择打开方式，需要进行的数据操作
+        }
+    }
+}
+```
+
+其中
+
+```c#
+FileStream FSRead = new FileStream(@"D:\64\FileStreamExample_01.txt",FileMode.OpenOrCreate,FileAccess.ReadWrite);
+```
+
+的构造函数
+
+`FileStream(string path,FileMode,FileAccess)`分别设置了文件所在路径、打开的方法与文件数据处理方法(权限)
+
+### 设置读取缓存区(FileStream)
+
+通过`Read()`方法来设置读取缓存用的字节数组等参数，并且**会返回**在本次读取中实际占用的有效字节数
+
+```c#
+//设定读取缓存区域
+byte[] FSRead_Cache = new byte[1024*1024*5];//设定缓存字节数组空间为5M
+/设置了缓存用的字节数组、在字节数组中写入的起始偏移(通常为0)与最大缓存区域
+FSRead.Read(FSRead_Cache,0,FSRead_Cache.Length);
+```
+
+而后这个方法会返回一个int类型数据
+
+### 将字节数组中的内容解码(Encoding)
+
+通过`Encoding`将字节数组的内容解码并存入字符串中
+
+```c#
+string s = Encoding.Default.GetString(FSRead_Cache,0,r);
+```
+
+### 关闭文件流和释放资源(FileStream)
+
+通过`Close()`方法关闭文件流，`Dispose()`方法释放资源
+
+```c#
+FSRead.Close();//关闭文件流
+FSRead.Dispose();//释放资源
+```
+
+
+
+### 写入文件与自动关闭&释放资源(FileStream&using)
+
+做到自动关闭与自动释放资源需要让整个FileStream在`using(){}`框架内
+
+以下是一个例子:
+
+```c#
+			//通过FileStream写入文件，并且通过using自动关闭
+            using(FileStream FSWrite = new FileStream(
+                    @"D:\64\FileStreamExample_01.txt", FileMode.OpenOrCreate,FileAccess.ReadWrite)
+                 )
+            {
+                //准备写入的内容
+                string need_write = "12138";
+                //设定缓存字节数组空间为5M
+                byte[] FSWrite_Cache = Encoding.UTF8.GetBytes(need_write);
+                FSWrite.Write(FSWrite_Cache,0,FSWrite_Cache.Length);
+            }
+            Console.WriteLine("Write Success");
+```
+
