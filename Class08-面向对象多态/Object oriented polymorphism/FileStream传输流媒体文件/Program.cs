@@ -6,7 +6,7 @@ namespace FileStream传输流媒体文件
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
