@@ -236,3 +236,33 @@ FSRead.Dispose();//释放资源
             Console.WriteLine("Write Success");
 ```
 
+
+
+# StreamReader & StreamWriter
+
+## StreamReader
+
+通过以下代码新建对象
+
+```c#
+StreamReader readAfile = new StreamReader(@"D:\64\S1.txt",Encoding.Default)
+```
+
+使用`Encoding.Default`来确保编码正确
+
+
+
+## StreamWriter
+
+通过以下代码新建对象
+
+```c#
+StreamWriter writeAfile = new StreamWriter(@"D:\64\new.txt")
+```
+
+可以在创建对象时确认是否要在写入时覆盖源文件还是叠加源文件
+
+```c#
+StreamWriter writeAfile = new StreamWriter(@"D:\64\new.txt",true)//覆盖
+```
+

@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02-Dictionary字典", "02-D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "集合小题目", "集合小题目\集合小题目.csproj", "{3752EBC6-7F19-406D-877E-8120F238A559}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-FileStream文件流", "03-FileStream文件流\03-FileStream文件流.csproj", "{B3B028B2-BB3A-41F0-AE51-F32B878FF4B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03-FileStream文件流", "03-FileStream文件流\03-FileStream文件流.csproj", "{B3B028B2-BB3A-41F0-AE51-F32B878FF4B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStream传输流媒体文件", "FileStream传输流媒体文件\FileStream传输流媒体文件.csproj", "{B6AA06D5-9D60-4A56-801B-4B6005366090}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileStream传输流媒体文件", "FileStream传输流媒体文件\FileStream传输流媒体文件.csproj", "{B6AA06D5-9D60-4A56-801B-4B6005366090}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-StreamReader_Writer", "04-StreamReader_Writer\04-StreamReader_Writer.csproj", "{0BECD1FA-3819-449F-868B-7B7D5B5F55BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{B6AA06D5-9D60-4A56-801B-4B6005366090}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6AA06D5-9D60-4A56-801B-4B6005366090}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6AA06D5-9D60-4A56-801B-4B6005366090}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BECD1FA-3819-449F-868B-7B7D5B5F55BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BECD1FA-3819-449F-868B-7B7D5B5F55BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BECD1FA-3819-449F-868B-7B7D5B5F55BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BECD1FA-3819-449F-868B-7B7D5B5F55BF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
