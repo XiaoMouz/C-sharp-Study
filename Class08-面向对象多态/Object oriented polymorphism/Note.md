@@ -236,3 +236,7 @@ FSRead.Dispose();//释放资源
             Console.WriteLine("Write Success");
 ```
 
+
+
+# StreamReader & StreamWriter
+
