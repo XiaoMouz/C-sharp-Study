@@ -23,7 +23,7 @@ namespace _04_StreamReader_Writer
             */
 
             //使用StreamReader写入文件
-            using (StreamWriter writeAfile = new StreamWriter(@"D:\64\new.txt",En))
+            using (StreamWriter writeAfile = new StreamWriter(@"D:\64\new.txt",false))
             {
                 writeAfile.Write("hiowjdioawjdaw");
             }
