@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _05_多态.抽象类;
+using System;
 
 namespace _05_多态
 {
@@ -32,6 +33,12 @@ namespace _05_多态
             }
 
             //02 - 抽象类
+            //例如需要猫叫和狗叫，而任意一个类都不适合作为父类时可以使用抽象类
+
+            Animal aDog = new Dog();
+            aDog.Brak();
+            Animal aCat = new Cat();
+            aCat.Brak();
         }
     }
 }
