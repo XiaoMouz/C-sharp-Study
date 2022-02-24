@@ -266,3 +266,61 @@ StreamWriter writeAfile = new StreamWriter(@"D:\64\new.txt")
 StreamWriter writeAfile = new StreamWriter(@"D:\64\new.txt",true)//覆盖
 ```
 
+
+
+# 多态
+
+- 概念:让一个对象表现出多种状态(类型)
+
+## 举例
+
+- 先创建一个父类，里面要有一个方法、一个字段和一个带参数构建方法，而后创建2个以上基于该父类的之类，除了构建方法带上`:base()`以外，同时写一个具有标志性的方法与父类方法重名
+
+```c#
+//创建子对象
+SubExample s1 = new SubExample("hi");
+SubExample s2 = new SubExample("hi2");
+TrdExample t1 = new TrdExample("hello");
+TrdExample t2 = new TrdExample("hello2");
+//将其放入父类数组
+Example[] es = {s1,s2, t1, t2};
+```
+
+
+
+如果在一般的时候，将这些对象放入父类的数组中，其读取出来都是父类的对象，调用也是父类的资源，需要通过以下代码强转后调用
+
+```c#
+for (int i = 0; i < es.Length; i++)
+            {
+                if(es[i] is SubExample)
+                {
+                    ((SubExample)es[i]).WhoAmI();
+                }else if(es[i] is TrdExample)
+                {
+                    ((TrdExample)es[i]).WhoAmI();
+                }
+            }
+```
+
+
+
+这样未免过于繁琐了，因此需要以下方法实现一个对象多种状态以供调用
+
+## 实现多态
+
+实现多态有三种方法
+
+1. 虚方法
+2. 抽象类
+3. 接口
+
+### 虚方法
+
+- 解决方案:在调用状态为父类的子类对象(即意为改对象会调用父类的方法而不是子类的方法)方法，让其父类的方法自动调用子类的方法即为虚方法
+
+### Do
+
+1. 将父类方法标记为虚方法，使用关键字`virtual`，即意为允许子类将该方法重写
+2. 在要覆写的子类方法写入关键字`override`，即表示子类会将该同名的并且标记了`virtual`的方法重写
+
