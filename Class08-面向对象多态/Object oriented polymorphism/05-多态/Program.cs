@@ -6,6 +6,7 @@ namespace _05_多态
     {
         static void Main(string[] args)
         {
+            //01 - 虚方法
             SubExample s1 = new SubExample("hi");
             SubExample s2 = new SubExample("hi2");
             TrdExample t1 = new TrdExample("hello");
@@ -29,6 +30,8 @@ namespace _05_多态
                 // 虚方法
                 es[i].WhoAmI();
             }
+
+            //02 - 抽象类
         }
     }
 }
