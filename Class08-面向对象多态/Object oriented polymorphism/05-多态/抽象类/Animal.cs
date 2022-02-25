@@ -10,6 +10,12 @@ namespace _05_多态.抽象类
     internal abstract class Animal
     {
 
+        public abstract string Name
+        {
+            get;
+            set;
+        }
+
         public abstract void Brak();//创建一个抽象方法，抽象方法禁止有方法体
     }
 }
