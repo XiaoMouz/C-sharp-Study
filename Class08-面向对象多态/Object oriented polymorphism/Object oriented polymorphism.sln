@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04-StreamReader_Writer", "0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05-多态", "05-多态\05-多态.csproj", "{ED824AE6-DF25-4321-9EDD-5208439B41AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "通过多态模拟硬件在电脑上读取数据", "通过多态模拟硬件在电脑上读取数据\通过多态模拟硬件在电脑上读取数据.csproj", "{35FBFFD4-63AF-46DB-BECD-460F124BEB86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "通过多态模拟硬件在电脑上读取数据", "通过多态模拟硬件在电脑上读取数据\通过多态模拟硬件在电脑上读取数据.csproj", "{35FBFFD4-63AF-46DB-BECD-460F124BEB86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-工厂设计模式", "06-工厂设计模式\06-工厂设计模式.csproj", "{312B438E-86CD-4E3A-B875-EC9791DE5B57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{35FBFFD4-63AF-46DB-BECD-460F124BEB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35FBFFD4-63AF-46DB-BECD-460F124BEB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35FBFFD4-63AF-46DB-BECD-460F124BEB86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{312B438E-86CD-4E3A-B875-EC9791DE5B57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{312B438E-86CD-4E3A-B875-EC9791DE5B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{312B438E-86CD-4E3A-B875-EC9791DE5B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{312B438E-86CD-4E3A-B875-EC9791DE5B57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
