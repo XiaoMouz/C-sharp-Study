@@ -409,6 +409,10 @@ for (int i = 0; i < es.Length; i++)
 
 值类型会存储在栈内，引用类型会存储在堆内
 
+## 值传递
+
+一次标准的值传递
+
 ```c#
 int n1 = 10 ;
 int n2 = n1 ; 
@@ -423,22 +427,67 @@ Console.WriteLine("{0}\n{1}"n1,n2);
 20
 ```
 
+其中n1的值是存储在栈内，而n2是从n1复制然后存储在一个新的栈内，因此传递的是这个值本身而不是n2指向n1
 
+## 引用传递
+
+而在引用类型是另一种情况，按以下代码为例
+
+```c#
+//Person是一个预先写好的类，有name这一个属性，并且name是公开的
+Person p1 = new Person();
+p1.name="AB";
+Person p2 = p1;
+p2.name="CD";
+Console.WriteLine(p1.name);
+```
+
+此时控制台将会打印
+
+```cmd
+CD
+```
+
+由于引用类型在复制的时候，传递的是对这个对象的引用
 
 ```mermaid
 classDiagram
-
+栈<|--堆
+ class 栈{
+ +p1 = person在堆中的地址
+ }
+ 
+ class 堆{
+ +new Person
+ }
 ```
 
+当执行到`Person p2 = p1;`时
+
+```mermaid
+classDiagram
+栈<|--堆
+ class 栈{
+ +p1 = person在堆中的地址
+ +p2 = 与p1同样的地址
+ }
+ 
+ class 堆{
+ +new Person
+ }
+```
+
+当`p2.name="CD"`时，堆中对应的地址被修改，而由于p1和p2共用一个地址，因此`p1.name`也被修改
+
+> 但是String是例外，由于字符串是不可变性变量，因此在执行上述自定义类的操作时，String并不会发生改变
 
 
 
+## ref关键字
 
+众所周知在值传入方法后，如果在方法内改变而不返回返回值的话外部的变量依旧不会变，因为他们在栈中地址不一样
 
-
-
-
-
+而在值使用`ref`时并调用方法后，两个值(外部变量和方法内的变量)在栈中的地址便是一样的了
 
 
 
