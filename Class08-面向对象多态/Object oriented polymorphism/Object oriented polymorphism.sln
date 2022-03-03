@@ -23,6 +23,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-工厂设计模式", "06
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-序列化与反序列化", "07-序列化与反序列化\07-序列化与反序列化.csproj", "{09E1E327-67FC-4E35-AD54-6C3ACE1E2E2D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-部分类", "08-部分类\08-部分类.csproj", "{C2BA1E4C-3548-4B30-A761-DFF43D56C847}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-密封类", "09-密封类\09-密封类.csproj", "{7F8AD8AC-1A8A-41B1-A6C0-69B9571ED653}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{09E1E327-67FC-4E35-AD54-6C3ACE1E2E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09E1E327-67FC-4E35-AD54-6C3ACE1E2E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09E1E327-67FC-4E35-AD54-6C3ACE1E2E2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2BA1E4C-3548-4B30-A761-DFF43D56C847}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2BA1E4C-3548-4B30-A761-DFF43D56C847}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2BA1E4C-3548-4B30-A761-DFF43D56C847}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2BA1E4C-3548-4B30-A761-DFF43D56C847}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F8AD8AC-1A8A-41B1-A6C0-69B9571ED653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F8AD8AC-1A8A-41B1-A6C0-69B9571ED653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F8AD8AC-1A8A-41B1-A6C0-69B9571ED653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F8AD8AC-1A8A-41B1-A6C0-69B9571ED653}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
