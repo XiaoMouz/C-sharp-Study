@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-密封类", "09-密封�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-重写ToString", "10-重写ToString\10-重写ToString.csproj", "{2105BF7A-FF11-4030-9BBB-3601C53419A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-接口", "11-接口\11-接口.csproj", "{565C8717-8649-4542-8D8B-5E7406ED66FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{2105BF7A-FF11-4030-9BBB-3601C53419A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2105BF7A-FF11-4030-9BBB-3601C53419A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2105BF7A-FF11-4030-9BBB-3601C53419A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565C8717-8649-4542-8D8B-5E7406ED66FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565C8717-8649-4542-8D8B-5E7406ED66FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565C8717-8649-4542-8D8B-5E7406ED66FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565C8717-8649-4542-8D8B-5E7406ED66FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

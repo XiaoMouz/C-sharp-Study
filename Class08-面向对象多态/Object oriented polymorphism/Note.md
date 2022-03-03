@@ -550,3 +550,128 @@ classDiagram
 
 # 接口
 
+ 接口是实现[多态](#多态)的第三种方法
+
+## 适用案例
+
+- 例现有三个类，分别是Person、NBA Player、Student，Student继承于父类Person而NBA Player是单独一个类，此时Student类想要使用NBA Player类中的方法，此时除了让NBA Player是Person的子类然后Student是NBA Player的子类以外，还能由NBA Player这个类提供接口用于重写
+
+## 如何实现接口
+
+按以下代码为例
+
+```c#
+	public class Person
+    {
+        public void SayHello()
+        {
+            Console.WriteLine("Hi");
+        }
+    }
+
+    public class NBAPlayer
+    {
+        public void PlayBasketball()
+        {
+            Console.WriteLine("Bong");
+        }
+    }
+
+    public class Student:Person
+    {
+        public void Study()
+        {
+            Console.WriteLine("Study");
+        }
+    }
+```
+
+Student已继承Person类，此时想要NBA Player的`PlayBasketball()`方法
+
+添加`interface`
+
+```c#
+	public interface IPlayBasketballable{
+		void PlayBasketball();
+	}
+```
+
+而后在Student类中添加接口
+
+```c#
+	public class Student:Person,IPlayBasketballable
+```
+
+再在Student类内重写`PlayBasketball()`方法
+
+```c#
+	public void PlayBasketball(){
+		....
+	}
+```
+
+## 为何是接口
+
+- 接口一般用在已有父类的情况下还需要更多方法来重写，此时即可使用接口
+- 接口也是一种规范、能力
+
+## 语法
+
+通过以下方法声明一个接口
+
+```c#
+	[public] interface (I(名称)able){
+		成员
+	}
+```
+
+- 接口中的成员不允许添加访问修饰符，默认为`public`
+- 接口中的方法没有方法体，也不能包含有方法体的方法
+- 接口中不能有字段，但是可以有[自动属性](#自动属性)
+
+## 特性
+
+- 如果有类继承了接口则这个类必须实现接口的所有属性
+- 接口不可被实例化
+- 接口不能继承类(类可以继承接口)，但是能继承多个接口，并且不用在新的接口中重写
+
+
+
+## 显示实现接口
+
+当类内有方法与接口内的方法重名时，会被认为类内重名的方法是接口的方法重写，此时需要指明是接口的方法进行重写
+
+- 以之前的Student、NBA Player与Person为例，新建Teacher类
+
+```c#
+public class Teacher : Person, IPlayBasketballable 
+    { 
+        public void PlayBasketball(string height)
+        {
+            Console.WriteLine(height);
+        }
+
+        public void IPlayBasketballable.PlayBasketball(string height)
+        {
+            Console.WriteLine("too");
+        }
+    }
+```
+
+通过`接口名.方法名`来重写特定接口的方法
+
+> 若要调用接口内的方法，可以通过创建接口对象，实例为子类的初始化来使用接口内方法
+
+# 自动属性
+
+通过以下方法声明一个自动属性
+
+```c#
+	string name{
+		get;
+		set;
+	}
+```
+
+> 自动属性即为自动生成私有字段，并且写法不同，没有字段没有方法体，因此也不允许限定属性 (因为少了限制的方法体)
+
