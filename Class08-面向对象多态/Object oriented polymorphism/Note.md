@@ -492,3 +492,20 @@ classDiagram
 
 
 # 序列化与反序列化
+
+- 序列化:将对象转换为二进制
+- 反序列化:将二进制转换为对象
+- 作用:传输数据
+
+## 序列化
+
+1. 如果需要序列化对象，需要将该类标记为可序列化的对象，需要在类的上一行标记`[Serializable]`，而后该类禁止被继承
+2. 开始序列化前还需要调用`System.Runtime.Serialization.Formatters.Binary;`来引入相关方法与对象
+3. 而后新建一个`BinaryFormatter`对象，通过`Serialize`方法将其序列化
+4. 噢，`Serialize`还需要一个`Stream`对象用于传输与存储，因此可以新建一个`FileStream`对象来存储，记得填地址和给权限
+5. 而后运行，将会写入与文件流对象实例化的文件
+
+## 反序列化
+
+1. 依旧需要序列化对象`BinaryFormatter`，而后调用`Deserialize`方法，然后会返回一个Object类型
+2. 通过 `变量名 = (要强转的类型)BinaryFormatter对象名.Deserialize(FileStream流)`来读取对象并转换为相应类型

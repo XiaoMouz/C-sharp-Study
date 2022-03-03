@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "通过多态模拟硬件在
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06-工厂设计模式", "06-工厂设计模式\06-工厂设计模式.csproj", "{312B438E-86CD-4E3A-B875-EC9791DE5B57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07-序列化与反序列化", "07-序列化与反序列化\07-序列化与反序列化.csproj", "{09E1E327-67FC-4E35-AD54-6C3ACE1E2E2D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{312B438E-86CD-4E3A-B875-EC9791DE5B57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{312B438E-86CD-4E3A-B875-EC9791DE5B57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{312B438E-86CD-4E3A-B875-EC9791DE5B57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09E1E327-67FC-4E35-AD54-6C3ACE1E2E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09E1E327-67FC-4E35-AD54-6C3ACE1E2E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09E1E327-67FC-4E35-AD54-6C3ACE1E2E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09E1E327-67FC-4E35-AD54-6C3ACE1E2E2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
