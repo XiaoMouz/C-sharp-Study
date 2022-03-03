@@ -31,6 +31,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-重写ToString", "10-重
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-接口", "11-接口\11-接口.csproj", "{565C8717-8649-4542-8D8B-5E7406ED66FD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "超市收银系统", "超市收银系统\超市收银系统.csproj", "{CAD06C0C-0B5A-40CB-8A55-3516B7B68E9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-GUID", "12-GUID\12-GUID.csproj", "{9F9A90F2-9757-4F21-AA78-05D5D34D8E8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +97,14 @@ Global
 		{565C8717-8649-4542-8D8B-5E7406ED66FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{565C8717-8649-4542-8D8B-5E7406ED66FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{565C8717-8649-4542-8D8B-5E7406ED66FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD06C0C-0B5A-40CB-8A55-3516B7B68E9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD06C0C-0B5A-40CB-8A55-3516B7B68E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD06C0C-0B5A-40CB-8A55-3516B7B68E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD06C0C-0B5A-40CB-8A55-3516B7B68E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F9A90F2-9757-4F21-AA78-05D5D34D8E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F9A90F2-9757-4F21-AA78-05D5D34D8E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F9A90F2-9757-4F21-AA78-05D5D34D8E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F9A90F2-9757-4F21-AA78-05D5D34D8E8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

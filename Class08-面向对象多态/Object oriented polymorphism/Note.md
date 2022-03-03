@@ -675,3 +675,17 @@ public class Teacher : Person, IPlayBasketballable
 
 > 自动属性即为自动生成私有字段，并且写法不同，没有字段没有方法体，因此也不允许限定属性 (因为少了限制的方法体)
 
+
+
+# GUID
+
+GUID能产生一个独一无二的编号
+
+```c#
+Guid name = Guid.NewGuid();
+//or
+Guid.NewGuid();
+name.ToString();//转字符串
+```
+
+以上即可
