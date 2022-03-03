@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08-部分类", "08-部分�
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09-密封类", "09-密封类\09-密封类.csproj", "{7F8AD8AC-1A8A-41B1-A6C0-69B9571ED653}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-重写ToString", "10-重写ToString\10-重写ToString.csproj", "{2105BF7A-FF11-4030-9BBB-3601C53419A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{7F8AD8AC-1A8A-41B1-A6C0-69B9571ED653}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F8AD8AC-1A8A-41B1-A6C0-69B9571ED653}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F8AD8AC-1A8A-41B1-A6C0-69B9571ED653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2105BF7A-FF11-4030-9BBB-3601C53419A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2105BF7A-FF11-4030-9BBB-3601C53419A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2105BF7A-FF11-4030-9BBB-3601C53419A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2105BF7A-FF11-4030-9BBB-3601C53419A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

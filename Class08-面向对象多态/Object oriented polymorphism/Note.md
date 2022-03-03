@@ -538,3 +538,15 @@ classDiagram
 
  
 
+# 重写`ToString()`方法
+
+由于正常情况下`ToString（）`方法转换为`String`后是直接打印对象名称
+
+因此需要重写`ToString`方法来使用
+
+> 与`ToString()`方法一样基于`Object`类可能需要重写的方法还有`Equals()`方法和`GetHashCode()`方法
+
+
+
+# 接口
+
