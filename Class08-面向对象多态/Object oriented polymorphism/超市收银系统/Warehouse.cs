@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace 超市收银系统
 {
+    //TO-DO
     internal class Warehouse
     {
         //存储货物
@@ -25,9 +26,9 @@ namespace 超市收银系统
             list.Add(new List<ProductFather>());//banana
         }
 
-        public static void AddProduct(ProductFather in,)
-        {
+        //public static void AddProduct(ProductFather in,)
+        //{
 
-        }
+        //}
     }
 }
