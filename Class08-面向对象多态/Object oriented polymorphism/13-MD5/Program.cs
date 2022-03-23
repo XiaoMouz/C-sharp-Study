@@ -8,7 +8,7 @@ namespace _13_MD5
     {
         static void Main(string[] args)
         {
-            string str = GetMD5("123");
+            string str = GetMD5("123粉啊啊啊");
             Console.WriteLine(str);
         }
 
@@ -19,11 +19,16 @@ namespace _13_MD5
             //加密
             
             //先将string转为字节数组
-            byte[] buffer = Encoding.UTF8.GetBytes(str);
+            byte[] buffer = Encoding.Default.GetBytes(str);
             //返回已加密的字节数组
             byte[] result = md5.ComputeHash(buffer);
             //再将字节数组转为字符串
-            return Encoding.UTF8.GetString(result);
+            string reback = "";
+            for (int i = 0; i < result.Length; i++)
+            {
+                reback += result[i].ToString("x");
+            }
+            return reback;
         }
     }
 }

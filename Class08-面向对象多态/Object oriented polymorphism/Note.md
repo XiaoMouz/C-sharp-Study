@@ -692,4 +692,30 @@ name.ToString();//转字符串
 
 # MD5
 
-如何进行MD5加密
+如何进行MD5加密，通过以下方法即可
+
+```c#
+        public static string GetMD5(string str)
+        {
+            //创建MD5对象
+            MD5 md5 = MD5.Create();
+            //加密
+            
+            //先将string转为字节数组
+            byte[] buffer = Encoding.Default.GetBytes(str);
+            //返回已加密的字节数组
+            byte[] result = md5.ComputeHash(buffer);
+            //再将字节数组转为字符串
+            string reback = "";
+            for (int i = 0; i < result.Length; i++)
+            {
+                reback += result[i].ToString("x");
+            }
+            return reback;
+        }
+```
+
+需要注意 
+
+1. md5加密后的字节数直接将其中元素使用`toString()`转换即可，不需要进行转码，但是MD5加密需要将字符串转成字节数组
+2. 在`ToString()`方法中填入字符串`"x"`即可将其转为16进制内容(默认10进制)
