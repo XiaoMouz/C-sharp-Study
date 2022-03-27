@@ -54,5 +54,10 @@ namespace SocketServer
         {
             textLog.AppendText(str+ "\r\n");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Control.CheckForIllegalCrossThreadCalls = false;
+        }
     }
 }
