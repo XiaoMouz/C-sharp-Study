@@ -45,8 +45,30 @@ namespace SocketServer
             //等待客户端连接 创建一个负责通信的Socket
             while (true)
             {
-            Socket socketConnect = socketWatch.Accept();
-            ShowMsg(socketConnect.RemoteEndPoint.ToString() + ":连接成功");
+                Socket socketConnect = socketWatch.Accept();
+                ShowMsg(socketConnect.RemoteEndPoint.ToString() + ":连接成功");
+
+                //创建线程用于接收客户端消息
+                Thread th = new Thread(Recive);
+                th.IsBackground = true;
+                th.Start(socketConnect);
+            }
+        }
+
+        void Recive(object o)
+        {
+            Socket socketConnect = o as Socket;
+            //接收客户端消息
+            while (true)
+            {
+                byte[] buffer = new byte[1024 * 1024 * 2];
+                int getByte = socketConnect.Receive(buffer);//将接收数据存入buffer，getByte是实际收到的字节数
+                string bufferCoding = Encoding.UTF8.GetString(buffer, 0, getByte);//收到的字符串
+                if (getByte == 0)
+                {
+                    break;
+                }
+                ShowMsg(socketConnect.RemoteEndPoint + ":" + bufferCoding);
             }
         }
 
