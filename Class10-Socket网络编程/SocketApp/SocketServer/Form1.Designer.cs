@@ -39,6 +39,7 @@
             this.sendFileBtn = new System.Windows.Forms.Button();
             this.sendMsgBtn = new System.Windows.Forms.Button();
             this.shockBtn = new System.Windows.Forms.Button();
+            this.selectFilePath = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // ipInput
@@ -98,45 +99,58 @@
             // 
             // chooseFileBtn
             // 
-            this.chooseFileBtn.Location = new System.Drawing.Point(292, 339);
+            this.chooseFileBtn.Location = new System.Drawing.Point(292, 379);
             this.chooseFileBtn.Name = "chooseFileBtn";
             this.chooseFileBtn.Size = new System.Drawing.Size(75, 23);
             this.chooseFileBtn.TabIndex = 7;
             this.chooseFileBtn.Text = "选择";
             this.chooseFileBtn.UseVisualStyleBackColor = true;
+            this.chooseFileBtn.Click += new System.EventHandler(this.chooseFileBtn_Click);
             // 
             // sendFileBtn
             // 
-            this.sendFileBtn.Location = new System.Drawing.Point(373, 339);
+            this.sendFileBtn.Location = new System.Drawing.Point(373, 379);
             this.sendFileBtn.Name = "sendFileBtn";
             this.sendFileBtn.Size = new System.Drawing.Size(75, 23);
             this.sendFileBtn.TabIndex = 8;
             this.sendFileBtn.Text = "发送文件";
             this.sendFileBtn.UseVisualStyleBackColor = true;
+            this.sendFileBtn.Click += new System.EventHandler(this.sendFileBtn_Click);
             // 
             // sendMsgBtn
             // 
-            this.sendMsgBtn.Location = new System.Drawing.Point(292, 379);
+            this.sendMsgBtn.Location = new System.Drawing.Point(292, 339);
             this.sendMsgBtn.Name = "sendMsgBtn";
             this.sendMsgBtn.Size = new System.Drawing.Size(75, 23);
             this.sendMsgBtn.TabIndex = 9;
             this.sendMsgBtn.Text = "发送消息";
             this.sendMsgBtn.UseVisualStyleBackColor = true;
+            this.sendMsgBtn.Click += new System.EventHandler(this.sendMsgBtn_Click);
             // 
             // shockBtn
             // 
-            this.shockBtn.Location = new System.Drawing.Point(374, 379);
+            this.shockBtn.Location = new System.Drawing.Point(373, 339);
             this.shockBtn.Name = "shockBtn";
             this.shockBtn.Size = new System.Drawing.Size(75, 23);
             this.shockBtn.TabIndex = 10;
             this.shockBtn.Text = "震动";
             this.shockBtn.UseVisualStyleBackColor = true;
+            this.shockBtn.Click += new System.EventHandler(this.shockBtn_Click);
+            // 
+            // selectFilePath
+            // 
+            this.selectFilePath.AutoSize = true;
+            this.selectFilePath.Location = new System.Drawing.Point(292, 409);
+            this.selectFilePath.Name = "selectFilePath";
+            this.selectFilePath.Size = new System.Drawing.Size(0, 12);
+            this.selectFilePath.TabIndex = 11;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.selectFilePath);
             this.Controls.Add(this.shockBtn);
             this.Controls.Add(this.sendMsgBtn);
             this.Controls.Add(this.sendFileBtn);
@@ -169,6 +183,7 @@
         private System.Windows.Forms.Button sendMsgBtn;
         private System.Windows.Forms.Button shockBtn;
         private System.Windows.Forms.Button chooseFileBtn;
+        private System.Windows.Forms.Label selectFilePath;
     }
 }
 

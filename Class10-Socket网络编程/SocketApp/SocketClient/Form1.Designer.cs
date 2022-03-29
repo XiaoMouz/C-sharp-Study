@@ -1,4 +1,4 @@
-﻿namespace SocketServer
+﻿namespace SocketClient
 {
     partial class Form1
     {
@@ -32,7 +32,6 @@
             this.portInput = new System.Windows.Forms.TextBox();
             this.startLinkBtn = new System.Windows.Forms.Button();
             this.textLog = new System.Windows.Forms.TextBox();
-            this.msgText = new System.Windows.Forms.TextBox();
             this.textInput = new System.Windows.Forms.TextBox();
             this.chooseFileBtn = new System.Windows.Forms.Button();
             this.sendFileBtn = new System.Windows.Forms.Button();
@@ -56,7 +55,7 @@
             // 
             // startLinkBtn
             // 
-            this.startLinkBtn.Location = new System.Drawing.Point(246, 63);
+            this.startLinkBtn.Location = new System.Drawing.Point(239, 65);
             this.startLinkBtn.Name = "startLinkBtn";
             this.startLinkBtn.Size = new System.Drawing.Size(75, 23);
             this.startLinkBtn.TabIndex = 2;
@@ -69,59 +68,55 @@
             this.textLog.Location = new System.Drawing.Point(62, 107);
             this.textLog.Multiline = true;
             this.textLog.Name = "textLog";
-            this.textLog.Size = new System.Drawing.Size(386, 96);
+            this.textLog.Size = new System.Drawing.Size(380, 155);
             this.textLog.TabIndex = 4;
-            // 
-            // msgText
-            // 
-            this.msgText.Location = new System.Drawing.Point(62, 218);
-            this.msgText.Multiline = true;
-            this.msgText.Name = "msgText";
-            this.msgText.Size = new System.Drawing.Size(386, 96);
-            this.msgText.TabIndex = 5;
             // 
             // textInput
             // 
-            this.textInput.Location = new System.Drawing.Point(62, 341);
+            this.textInput.Location = new System.Drawing.Point(62, 307);
             this.textInput.Name = "textInput";
             this.textInput.Size = new System.Drawing.Size(202, 21);
             this.textInput.TabIndex = 6;
             // 
             // chooseFileBtn
             // 
-            this.chooseFileBtn.Location = new System.Drawing.Point(292, 379);
+            this.chooseFileBtn.Location = new System.Drawing.Point(286, 347);
             this.chooseFileBtn.Name = "chooseFileBtn";
             this.chooseFileBtn.Size = new System.Drawing.Size(75, 23);
             this.chooseFileBtn.TabIndex = 7;
             this.chooseFileBtn.Text = "选择";
             this.chooseFileBtn.UseVisualStyleBackColor = true;
+            this.chooseFileBtn.Click += new System.EventHandler(this.chooseFileBtn_Click);
             // 
             // sendFileBtn
             // 
-            this.sendFileBtn.Location = new System.Drawing.Point(373, 339);
+            this.sendFileBtn.Location = new System.Drawing.Point(367, 347);
             this.sendFileBtn.Name = "sendFileBtn";
             this.sendFileBtn.Size = new System.Drawing.Size(75, 23);
             this.sendFileBtn.TabIndex = 8;
             this.sendFileBtn.Text = "发送文件";
             this.sendFileBtn.UseVisualStyleBackColor = true;
+            this.sendFileBtn.Click += new System.EventHandler(this.sendFileBtn_Click);
             // 
             // sendMsgBtn
             // 
-            this.sendMsgBtn.Location = new System.Drawing.Point(292, 339);
+            this.sendMsgBtn.Location = new System.Drawing.Point(286, 307);
             this.sendMsgBtn.Name = "sendMsgBtn";
             this.sendMsgBtn.Size = new System.Drawing.Size(75, 23);
             this.sendMsgBtn.TabIndex = 9;
             this.sendMsgBtn.Text = "发送消息";
             this.sendMsgBtn.UseVisualStyleBackColor = true;
+            this.sendMsgBtn.Click += new System.EventHandler(this.sendMsgBtn_Click);
             // 
             // shockBtn
             // 
-            this.shockBtn.Location = new System.Drawing.Point(374, 379);
+            this.shockBtn.Location = new System.Drawing.Point(367, 307);
             this.shockBtn.Name = "shockBtn";
             this.shockBtn.Size = new System.Drawing.Size(75, 23);
             this.shockBtn.TabIndex = 10;
             this.shockBtn.Text = "震动";
             this.shockBtn.UseVisualStyleBackColor = true;
+            this.shockBtn.Click += new System.EventHandler(this.shockBtn_Click);
             // 
             // Form1
             // 
@@ -133,7 +128,6 @@
             this.Controls.Add(this.sendFileBtn);
             this.Controls.Add(this.chooseFileBtn);
             this.Controls.Add(this.textInput);
-            this.Controls.Add(this.msgText);
             this.Controls.Add(this.textLog);
             this.Controls.Add(this.startLinkBtn);
             this.Controls.Add(this.portInput);
@@ -152,7 +146,6 @@
         private System.Windows.Forms.TextBox portInput;
         private System.Windows.Forms.Button startLinkBtn;
         private System.Windows.Forms.TextBox textLog;
-        private System.Windows.Forms.TextBox msgText;
         private System.Windows.Forms.TextBox textInput;
         private System.Windows.Forms.Button sendFileBtn;
         private System.Windows.Forms.Button sendMsgBtn;
