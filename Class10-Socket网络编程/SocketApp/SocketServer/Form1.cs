@@ -57,6 +57,7 @@ namespace SocketServer
                     Socket socketConnect = socketWatch.Accept();
                     socketList.Add(socketConnect.RemoteEndPoint.ToString(),socketConnect);//远程连接的Socket存入socketList中
                     listenList.Items.Add(socketConnect.RemoteEndPoint.ToString());//将Socket的ip地址加入下拉框
+                    listenList.SelectedIndex = 0;
                     ShowMsg(socketConnect.RemoteEndPoint.ToString() + ":连接成功");
 
                     //创建线程用于接收客户端消息
@@ -115,17 +116,25 @@ namespace SocketServer
 
         private void sendMsgBtn_Click(object sender, EventArgs e)
         {
-            string msg = textInput.Text;
-            byte[] buffer = System.Text.Encoding.UTF8.GetBytes(msg);
-            //为字节头添加类型标记
-            List<byte> list = new List<byte>();
-            list.Add(0);
-            list.AddRange(buffer);
-            byte[] newBuffer = list.ToArray();
-            //发送消息
-            string ip = listenList.SelectedItem.ToString();
-            socketList[ip].Send(newBuffer);
-            //socketWatch.Send(buffer);
+            try
+            {
+                string msg = textInput.Text;
+                byte[] buffer = System.Text.Encoding.UTF8.GetBytes(msg);
+                //为字节头添加类型标记
+                List<byte> list = new List<byte>();
+                list.Add(0);
+                list.AddRange(buffer);
+                byte[] newBuffer = list.ToArray();
+                //发送消息
+                string ip = listenList.SelectedItem.ToString();
+                socketList[ip].Send(newBuffer);
+                textInput.Clear();
+                //socketWatch.Send(buffer);
+            }
+            catch
+            {
+                
+            }
         }
 
         private void chooseFileBtn_Click(object sender, EventArgs e)
@@ -142,21 +151,28 @@ namespace SocketServer
 
         private void sendFileBtn_Click(object sender, EventArgs e)
         {
-            string path = selectFilePath.Text;
-            using (FileStream fsReader = new FileStream(path, FileMode.Open, FileAccess.Read))
+            try
             {
-                byte[] buffer = new byte[1024*1024*10];
-                int r = fsReader.Read(buffer, 0, buffer.Length);
+                string path = selectFilePath.Text;
+                using (FileStream fsReader = new FileStream(path, FileMode.Open, FileAccess.Read))
+                {
+                    byte[] buffer = new byte[1024 * 1024 * 10];
+                    int r = fsReader.Read(buffer, 0, buffer.Length);
 
-                //为字节头添加类型标记
-                List<byte> list = new List<byte>();
-                list.Add(1);
-                list.AddRange(buffer);
-                byte[] newBuffer = list.ToArray();
+                    //为字节头添加类型标记
+                    List<byte> list = new List<byte>();
+                    list.Add(1);
+                    list.AddRange(buffer);
+                    byte[] newBuffer = list.ToArray();
 
-                socketList[listenList.SelectedItem.ToString()].Send(newBuffer,0,r+1,SocketFlags.None);
+                    socketList[listenList.SelectedItem.ToString()].Send(newBuffer, 0, r + 1, SocketFlags.None);
 
-                sendFileBtn.Visible = false;
+                    sendFileBtn.Visible = false;
+                }
+            }
+            catch
+            {
+
             }
         }
 

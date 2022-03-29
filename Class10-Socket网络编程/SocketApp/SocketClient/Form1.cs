@@ -74,7 +74,7 @@ namespace SocketClient
             {
                 try
                 {
-                    byte[] buffer = new byte[1024 * 1024 * 2];
+                    byte[] buffer = new byte[1024 * 1024 * 10];
                     int getByte = socketConnect.Receive(buffer);//将接收数据存入buffer，getByte是实际收到的字节数
                     if (getByte == 0)
                     {
@@ -83,10 +83,8 @@ namespace SocketClient
 
                     if (buffer[0] == 0)
                     {
-                        
                         string bufferCoding = Encoding.UTF8.GetString(buffer, 1, getByte - 1);//收到的字符串
                         ShowMsg(socketConnect.RemoteEndPoint + ":" + bufferCoding);
-                        break;
                     }else if(buffer[0] == 1)
                     {
                         SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -102,7 +100,7 @@ namespace SocketClient
                         MessageBox.Show("已保存");
                     }else if(buffer[0] == 2)
                     {
-                        shake()
+                        shake();
                     }
                 }
                 catch
